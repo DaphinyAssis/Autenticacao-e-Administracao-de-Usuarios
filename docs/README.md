@@ -23,8 +23,8 @@ Os requisitos do projeto estão documentados no arquivo 📄 [requisitos.md](req
 
 ## 🛠️ Tecnologias Utilizadas
 - **🖥️ Linguagem de programação:** Python 🐍
-- **📦 Framework:** Django ou Flask
-- **🗄️ Banco de dados:** PostgreSQL ou SQLite
+- **📦 Framework:** Flask
+- **🗄️ Banco de dados:** SQLite
 - **🔒 Ferramentas de segurança:** bcrypt para hash de senhas, proteção contra ataques de força bruta
 
 ---
@@ -32,7 +32,7 @@ Os requisitos do projeto estão documentados no arquivo 📄 [requisitos.md](req
 ## 🚀 Instalação
 1. **Clone este repositório:**
    ```sh
-   git clone https://github.com/seu-usuario/modulo-autenticacao.git
+   git clone https://github.com/DaphinyAssis/modulo-autenticacao.git
    ```
 2. **Crie e ative um ambiente virtual:**
    ```sh
