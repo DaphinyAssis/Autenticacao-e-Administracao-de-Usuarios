@@ -1,7 +1,7 @@
 #  🛢 Modelagem do Banco de Dados (Diagrama Entidade-Relacionamento)
 
 ## Tabela: User
- _________________________________________________________________
+
 | Campo         | Tipo         | Restrições                       |
 |---------------|--------------|----------------------------------|
 | id            | Integer      | PK, Auto Increment               |
@@ -11,6 +11,5 @@
 | created_at    | DateTime     | DEFAULT datetime.utcnow          |
 | is_active     | Boolean      | DEFAULT True                     |
 | is_anonymized | Boolean      | DEFAULT False                    |
-|_________________________________________________________________|
 
 
