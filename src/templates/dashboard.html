@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 1rem;
+            background-color: #f8f9fa;
+        }
+        .dashboard-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sistema de Usuários</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item admin-only" style="display: none;">
+                        <a class="nav-link" href="/admin">Painel Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="dashboard-container">
+            <h2 class="mb-4">Dashboard</h2>
+            <div class="alert alert-info" role="alert">
+                Bem-vindo <span id="user-email"></span>! Seu papel é: <span id="user-role"></span>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header">
+                    Ações
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Gerenciar sua conta</h5>
+                    <p class="card-text">Você pode excluir sua conta utilizando o botão abaixo. Esta ação é irreversível e seus dados serão anonimizados.</p>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                        Excluir Conta
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Account Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirmar Exclusão</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tem certeza que deseja excluir sua conta? Esta ação é irreversível e seus dados serão anonimizados.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" id="confirm-delete">Confirmar Exclusão</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            try {
+                // Get user info
+                const response = await fetch('/user_info');
+                if (!response.ok) {
+                    window.location.href = '/login';
+                    return;
+                }
+                
+                const userData = await response.json();
+                document.getElementById('user-email').textContent = userData.email;
+                document.getElementById('user-role').textContent = userData.role;
+                
+                // Show admin link if user is admin
+                if (userData.role === 'admin') {
+                    document.querySelectorAll('.admin-only').forEach(el => {
+                        el.style.display = 'block';
+                    });
+                }
+                
+                // Handle delete account
+                document.getElementById('confirm-delete').addEventListener('click', async function() {
+                    try {
+                        const deleteResponse = await fetch('/delete_account', {
+                            method: 'POST'
+                        });
+                        
+                        if (deleteResponse.ok) {
+                            window.location.href = '/';
+                        } else {
+                            alert('Erro ao excluir conta.');
+                        }
+                    } catch (error) {
+                        console.error('Erro:', error);
+                        alert('Erro ao conectar com o servidor.');
+                    }
+                });
+                
+            } catch (error) {
+                console.error('Erro:', error);
+                alert('Erro ao carregar informações do usuário.');
+            }
+        });
+    </script>
+</body>
+</html>

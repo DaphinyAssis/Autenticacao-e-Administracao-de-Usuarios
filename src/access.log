@@ -1,0 +1,199 @@
+2025-04-03 21:06:57,760 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 21:06:57,760 - [33mPress CTRL+C to quit[0m
+2025-04-03 21:06:57,762 -  * Restarting with stat
+2025-04-03 21:06:58,503 -  * Debugger is active!
+2025-04-03 21:06:58,507 -  * Debugger PIN: 792-022-818
+2025-04-03 21:07:14,121 - 127.0.0.1 - - [03/Apr/2025 21:07:14] "GET / HTTP/1.1" 200 -
+2025-04-03 21:07:14,302 - 127.0.0.1 - - [03/Apr/2025 21:07:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-03 21:07:16,206 - 127.0.0.1 - - [03/Apr/2025 21:07:16] "GET /register HTTP/1.1" 200 -
+2025-04-03 21:08:20,259 - 127.0.0.1 - - [03/Apr/2025 21:08:20] "GET /register HTTP/1.1" 200 -
+2025-04-03 21:08:23,199 - 127.0.0.1 - - [03/Apr/2025 21:08:23] "GET / HTTP/1.1" 200 -
+2025-04-03 21:08:30,459 - Novo usuário registrado: asd@gmail.com
+2025-04-03 21:08:30,460 - 127.0.0.1 - - [03/Apr/2025 21:08:30] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-03 21:08:30,675 - 127.0.0.1 - - [03/Apr/2025 21:08:30] "GET / HTTP/1.1" 200 -
+2025-04-03 21:08:43,485 - Login bem-sucedido: asd@gmail.com
+2025-04-03 21:08:43,486 - 127.0.0.1 - - [03/Apr/2025 21:08:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-03 21:08:43,492 - 127.0.0.1 - - [03/Apr/2025 21:08:43] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:08:51,499 - Link de reset gerado para: asd@gmail.com
+2025-04-03 21:08:51,499 - 127.0.0.1 - - [03/Apr/2025 21:08:51] "POST /reset_password HTTP/1.1" 200 -
+2025-04-03 21:08:59,545 - 127.0.0.1 - - [03/Apr/2025 21:08:59] "GET /register HTTP/1.1" 200 -
+2025-04-03 21:09:04,295 - Login bem-sucedido: asd@gmail.com
+2025-04-03 21:09:04,296 - 127.0.0.1 - - [03/Apr/2025 21:09:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-03 21:09:04,507 - 127.0.0.1 - - [03/Apr/2025 21:09:04] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:16:26,863 -  * Detected change in 'c:\\Users\\7QXM45HRD\\Documents\\m1-implementacao - Copia\\run.py', reloading
+2025-04-03 21:16:26,965 -  * Restarting with stat
+2025-04-03 21:16:27,638 -  * Debugger is active!
+2025-04-03 21:16:27,642 -  * Debugger PIN: 792-022-818
+2025-04-03 21:17:34,170 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 21:17:34,170 - [33mPress CTRL+C to quit[0m
+2025-04-03 21:17:34,172 -  * Restarting with stat
+2025-04-03 21:17:34,885 -  * Debugger is active!
+2025-04-03 21:17:34,888 -  * Debugger PIN: 792-022-818
+2025-04-03 21:17:38,164 - 127.0.0.1 - - [03/Apr/2025 21:17:38] "GET / HTTP/1.1" 200 -
+2025-04-03 21:17:40,606 - 127.0.0.1 - - [03/Apr/2025 21:17:40] "GET /register HTTP/1.1" 200 -
+2025-04-03 21:17:53,570 - Novo usuário registrado: teste123@gmail.com com papel: admin
+2025-04-03 21:17:53,571 - 127.0.0.1 - - [03/Apr/2025 21:17:53] "POST /register HTTP/1.1" 200 -
+2025-04-03 21:17:55,907 - 127.0.0.1 - - [03/Apr/2025 21:17:55] "GET /login HTTP/1.1" 200 -
+2025-04-03 21:18:00,755 - Login bem-sucedido: teste123@gmail.com
+2025-04-03 21:18:00,756 - 127.0.0.1 - - [03/Apr/2025 21:18:00] "POST /login HTTP/1.1" 200 -
+2025-04-03 21:18:00,776 - 127.0.0.1 - - [03/Apr/2025 21:18:00] "GET /admin HTTP/1.1" 200 -
+2025-04-03 21:18:01,076 - 127.0.0.1 - - [03/Apr/2025 21:18:01] "GET /api/users HTTP/1.1" 200 -
+2025-04-03 21:18:43,731 - 127.0.0.1 - - [03/Apr/2025 21:18:43] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:18:43,822 - 127.0.0.1 - - [03/Apr/2025 21:18:43] "GET /user_info HTTP/1.1" 200 -
+2025-04-03 21:18:51,160 - Conta anonimizada: 2
+2025-04-03 21:18:51,161 - 127.0.0.1 - - [03/Apr/2025 21:18:51] "POST /delete_account HTTP/1.1" 200 -
+2025-04-03 21:18:51,482 - 127.0.0.1 - - [03/Apr/2025 21:18:51] "GET / HTTP/1.1" 200 -
+2025-04-03 21:22:35,587 -  * Detected change in 'c:\\Users\\7QXM45HRD\\Documents\\m1-implementacao - Copia\\run.py', reloading
+2025-04-03 21:22:35,656 -  * Restarting with stat
+2025-04-03 21:22:36,355 -  * Debugger is active!
+2025-04-03 21:22:36,359 -  * Debugger PIN: 792-022-818
+2025-04-03 21:22:42,441 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 21:22:42,442 - [33mPress CTRL+C to quit[0m
+2025-04-03 21:22:42,443 -  * Restarting with stat
+2025-04-03 21:22:43,036 -  * Debugger is active!
+2025-04-03 21:22:43,039 -  * Debugger PIN: 792-022-818
+2025-04-03 21:22:45,607 - 127.0.0.1 - - [03/Apr/2025 21:22:45] "GET / HTTP/1.1" 200 -
+2025-04-03 21:22:47,859 - 127.0.0.1 - - [03/Apr/2025 21:22:47] "GET /register HTTP/1.1" 200 -
+2025-04-03 21:22:55,913 - Novo usuário registrado: daphi@gmail.com com papel: admin
+2025-04-03 21:22:55,913 - 127.0.0.1 - - [03/Apr/2025 21:22:55] "POST /register HTTP/1.1" 200 -
+2025-04-03 21:22:58,248 - 127.0.0.1 - - [03/Apr/2025 21:22:58] "GET /login HTTP/1.1" 200 -
+2025-04-03 21:23:02,361 - Login bem-sucedido: daphi@gmail.com
+2025-04-03 21:23:02,362 - 127.0.0.1 - - [03/Apr/2025 21:23:02] "POST /login HTTP/1.1" 200 -
+2025-04-03 21:23:02,382 - 127.0.0.1 - - [03/Apr/2025 21:23:02] "GET /admin HTTP/1.1" 200 -
+2025-04-03 21:23:02,693 - 127.0.0.1 - - [03/Apr/2025 21:23:02] "GET /api/users HTTP/1.1" 200 -
+2025-04-03 21:23:05,993 - 127.0.0.1 - - [03/Apr/2025 21:23:05] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:23:06,083 - 127.0.0.1 - - [03/Apr/2025 21:23:06] "GET /user_info HTTP/1.1" 200 -
+2025-04-03 21:23:10,372 - Conta anonimizada: 3
+2025-04-03 21:23:10,372 - 127.0.0.1 - - [03/Apr/2025 21:23:10] "POST /delete_account HTTP/1.1" 200 -
+2025-04-03 21:23:10,703 - 127.0.0.1 - - [03/Apr/2025 21:23:10] "GET / HTTP/1.1" 200 -
+2025-04-03 21:23:14,491 - 127.0.0.1 - - [03/Apr/2025 21:23:14] "GET /login HTTP/1.1" 200 -
+2025-04-03 21:23:21,153 - Login bem-sucedido: asd@gmail.com
+2025-04-03 21:23:21,153 - 127.0.0.1 - - [03/Apr/2025 21:23:21] "POST /login HTTP/1.1" 200 -
+2025-04-03 21:23:21,476 - 127.0.0.1 - - [03/Apr/2025 21:23:21] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:23:21,578 - 127.0.0.1 - - [03/Apr/2025 21:23:21] "GET /user_info HTTP/1.1" 200 -
+2025-04-03 21:23:24,052 - 127.0.0.1 - - [03/Apr/2025 21:23:24] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:23:24,362 - 127.0.0.1 - - [03/Apr/2025 21:23:24] "GET /user_info HTTP/1.1" 200 -
+2025-04-03 21:23:31,148 - Conta anonimizada: 1
+2025-04-03 21:23:31,148 - 127.0.0.1 - - [03/Apr/2025 21:23:31] "POST /delete_account HTTP/1.1" 200 -
+2025-04-03 21:23:31,407 - 127.0.0.1 - - [03/Apr/2025 21:23:31] "GET / HTTP/1.1" 200 -
+2025-04-03 21:58:20,078 - 127.0.0.1 - - [03/Apr/2025 21:58:20] "GET / HTTP/1.1" 200 -
+2025-04-03 21:58:28,489 - 127.0.0.1 - - [03/Apr/2025 21:58:28] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:02:20,358 - 127.0.0.1 - - [03/Apr/2025 22:02:20] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:02:21,291 - 127.0.0.1 - - [03/Apr/2025 22:02:21] "GET /reset_password HTTP/1.1" 200 -
+2025-04-03 22:02:26,816 - 127.0.0.1 - - [03/Apr/2025 22:02:26] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:02:30,589 - 127.0.0.1 - - [03/Apr/2025 22:02:30] "GET /register HTTP/1.1" 200 -
+2025-04-03 22:06:07,570 - 127.0.0.1 - - [03/Apr/2025 22:06:07] "GET / HTTP/1.1" 200 -
+2025-04-03 22:07:51,426 - 127.0.0.1 - - [03/Apr/2025 22:07:51] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:07:56,917 - 127.0.0.1 - - [03/Apr/2025 22:07:56] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:08:04,419 - Tentativa de login falha: daphi@gmail.com
+2025-04-03 22:08:04,420 - 127.0.0.1 - - [03/Apr/2025 22:08:04] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-03 22:08:13,215 - Tentativa de login falha: asd@gmail.com
+2025-04-03 22:08:13,215 - 127.0.0.1 - - [03/Apr/2025 22:08:13] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-03 22:08:14,316 - 127.0.0.1 - - [03/Apr/2025 22:08:14] "GET /register HTTP/1.1" 200 -
+2025-04-03 22:08:18,739 - Novo usuário registrado: daphi@gmail.com com papel: admin
+2025-04-03 22:08:18,739 - 127.0.0.1 - - [03/Apr/2025 22:08:18] "POST /register HTTP/1.1" 200 -
+2025-04-03 22:08:21,085 - 127.0.0.1 - - [03/Apr/2025 22:08:21] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:08:25,602 - Login bem-sucedido: daphi@gmail.com
+2025-04-03 22:08:25,603 - 127.0.0.1 - - [03/Apr/2025 22:08:25] "POST /login HTTP/1.1" 200 -
+2025-04-03 22:08:26,125 - 127.0.0.1 - - [03/Apr/2025 22:08:26] "GET /admin HTTP/1.1" 200 -
+2025-04-03 22:08:26,427 - 127.0.0.1 - - [03/Apr/2025 22:08:26] "GET /api/users HTTP/1.1" 200 -
+2025-04-03 22:08:29,324 - 127.0.0.1 - - [03/Apr/2025 22:08:29] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 22:08:29,450 - 127.0.0.1 - - [03/Apr/2025 22:08:29] "GET /user_info HTTP/1.1" 200 -
+2025-04-03 22:08:38,916 - Conta anonimizada: 4
+2025-04-03 22:08:38,916 - 127.0.0.1 - - [03/Apr/2025 22:08:38] "POST /delete_account HTTP/1.1" 200 -
+2025-04-03 22:08:39,245 - 127.0.0.1 - - [03/Apr/2025 22:08:39] "GET / HTTP/1.1" 200 -
+2025-04-04 05:57:31,670 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-04 05:57:31,672 - [33mPress CTRL+C to quit[0m
+2025-04-04 05:57:31,674 -  * Restarting with stat
+2025-04-04 05:57:32,319 -  * Debugger is active!
+2025-04-04 05:57:32,323 -  * Debugger PIN: 783-716-852
+2025-04-04 05:57:41,370 - 127.0.0.1 - - [04/Apr/2025 05:57:41] "GET / HTTP/1.1" 200 -
+2025-04-04 05:57:41,628 - 127.0.0.1 - - [04/Apr/2025 05:57:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-04 05:57:46,364 - 127.0.0.1 - - [04/Apr/2025 05:57:46] "GET /login HTTP/1.1" 200 -
+2025-04-04 05:57:51,400 - Tentativa de login falha: teste123@gmail.com
+2025-04-04 05:57:51,401 - 127.0.0.1 - - [04/Apr/2025 05:57:51] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-04 05:57:57,048 - Tentativa de login falha: daphi@gmail.com
+2025-04-04 05:57:57,048 - 127.0.0.1 - - [04/Apr/2025 05:57:57] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-04 05:57:59,952 - Tentativa de login falha: daphi@gmail.com
+2025-04-04 05:57:59,952 - 127.0.0.1 - - [04/Apr/2025 05:57:59] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-04 05:58:01,416 - 127.0.0.1 - - [04/Apr/2025 05:58:01] "GET /register HTTP/1.1" 200 -
+2025-04-04 05:58:08,023 - Novo usuário registrado: dd@gmail.com com papel: admin
+2025-04-04 05:58:08,024 - 127.0.0.1 - - [04/Apr/2025 05:58:08] "POST /register HTTP/1.1" 200 -
+2025-04-04 05:58:10,051 - 127.0.0.1 - - [04/Apr/2025 05:58:10] "GET /login HTTP/1.1" 200 -
+2025-04-04 05:58:14,942 - Login bem-sucedido: dd@gmail.com
+2025-04-04 05:58:14,944 - 127.0.0.1 - - [04/Apr/2025 05:58:14] "POST /login HTTP/1.1" 200 -
+2025-04-04 05:58:15,779 - 127.0.0.1 - - [04/Apr/2025 05:58:15] "GET /admin HTTP/1.1" 200 -
+2025-04-04 05:58:15,900 - 127.0.0.1 - - [04/Apr/2025 05:58:15] "GET /api/users HTTP/1.1" 200 -
+2025-04-04 05:58:23,427 - 127.0.0.1 - - [04/Apr/2025 05:58:23] "GET /dashboard HTTP/1.1" 200 -
+2025-04-04 05:58:23,709 - 127.0.0.1 - - [04/Apr/2025 05:58:23] "GET /user_info HTTP/1.1" 200 -
+2025-04-04 05:58:34,631 - 127.0.0.1 - - [04/Apr/2025 05:58:34] "GET /dashboard HTTP/1.1" 200 -
+2025-04-04 05:58:34,711 - 127.0.0.1 - - [04/Apr/2025 05:58:34] "GET /user_info HTTP/1.1" 200 -
+2025-04-05 16:42:18,079 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-05 16:42:18,079 - [33mPress CTRL+C to quit[0m
+2025-04-05 16:42:18,082 -  * Restarting with stat
+2025-04-05 16:42:18,629 -  * Debugger is active!
+2025-04-05 16:42:18,633 -  * Debugger PIN: 118-107-358
+2025-04-05 16:42:24,010 - 127.0.0.1 - - [05/Apr/2025 16:42:24] "GET / HTTP/1.1" 200 -
+2025-04-05 16:42:24,272 - 127.0.0.1 - - [05/Apr/2025 16:42:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-05 16:42:30,092 - 127.0.0.1 - - [05/Apr/2025 16:42:30] "GET /login HTTP/1.1" 200 -
+2025-04-05 16:43:51,333 - 127.0.0.1 - - [05/Apr/2025 16:43:51] "GET / HTTP/1.1" 200 -
+2025-04-05 16:43:59,424 - 127.0.0.1 - - [05/Apr/2025 16:43:59] "GET /login HTTP/1.1" 200 -
+2025-04-05 16:45:41,104 - 127.0.0.1 - - [05/Apr/2025 16:45:41] "GET /register HTTP/1.1" 200 -
+2025-04-05 16:45:49,507 - Novo usuário registrado: asdd@asdd com papel: admin
+2025-04-05 16:45:49,508 - 127.0.0.1 - - [05/Apr/2025 16:45:49] "POST /register HTTP/1.1" 200 -
+2025-04-05 16:45:51,533 - 127.0.0.1 - - [05/Apr/2025 16:45:51] "GET /login HTTP/1.1" 200 -
+2025-04-05 16:45:55,498 - Login bem-sucedido: asdd@asdd
+2025-04-05 16:45:55,499 - 127.0.0.1 - - [05/Apr/2025 16:45:55] "POST /login HTTP/1.1" 200 -
+2025-04-05 16:45:56,357 - 127.0.0.1 - - [05/Apr/2025 16:45:56] "GET /admin HTTP/1.1" 200 -
+2025-04-05 16:45:56,464 - 127.0.0.1 - - [05/Apr/2025 16:45:56] "GET /api/users HTTP/1.1" 200 -
+2025-04-05 16:46:01,596 - 127.0.0.1 - - [05/Apr/2025 16:46:01] "GET /dashboard HTTP/1.1" 200 -
+2025-04-05 16:46:01,900 - 127.0.0.1 - - [05/Apr/2025 16:46:01] "GET /user_info HTTP/1.1" 200 -
+2025-04-05 16:51:32,369 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:32,439 -  * Restarting with stat
+2025-04-05 16:51:32,979 -  * Debugger is active!
+2025-04-05 16:51:32,981 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:34,008 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:34,071 -  * Restarting with stat
+2025-04-05 16:51:34,656 -  * Debugger is active!
+2025-04-05 16:51:34,658 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:36,689 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:36,747 -  * Restarting with stat
+2025-04-05 16:51:37,276 -  * Debugger is active!
+2025-04-05 16:51:37,278 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:39,319 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:39,387 -  * Restarting with stat
+2025-04-05 16:51:39,948 -  * Debugger is active!
+2025-04-05 16:51:39,950 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:40,967 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:41,042 -  * Restarting with stat
+2025-04-05 16:51:41,671 -  * Debugger is active!
+2025-04-05 16:51:41,673 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:42,702 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:42,776 -  * Restarting with stat
+2025-04-05 16:51:43,381 -  * Debugger is active!
+2025-04-05 16:51:43,385 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:44,414 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:44,508 -  * Restarting with stat
+2025-04-05 16:51:45,117 -  * Debugger is active!
+2025-04-05 16:51:45,119 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:47,154 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:47,233 -  * Restarting with stat
+2025-04-05 16:51:47,814 -  * Debugger is active!
+2025-04-05 16:51:47,816 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:48,847 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:48,923 -  * Restarting with stat
+2025-04-05 16:51:49,430 -  * Debugger is active!
+2025-04-05 16:51:49,432 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:50,447 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:50,528 -  * Restarting with stat
+2025-04-05 16:51:51,118 -  * Debugger is active!
+2025-04-05 16:51:51,121 -  * Debugger PIN: 118-107-358
+2025-04-05 16:54:32,906 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:54:32,976 -  * Restarting with stat
+2025-04-05 16:54:33,492 -  * Debugger is active!
+2025-04-05 16:54:33,494 -  * Debugger PIN: 118-107-358
