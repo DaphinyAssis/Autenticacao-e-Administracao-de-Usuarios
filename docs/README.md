@@ -37,7 +37,7 @@ Os requisitos do projeto estão documentados no arquivo 📄 [requisitos.md](req
 ## 🚀 Instalação
 1. **Clone este repositório:**
    ```sh
-   git clone https://github.com/seu-usuario/modulo-autenticacao.git
+   git clone https://github.com/DaphinyAssis/modulo-autenticacao.git
    ```
 2. **Crie e ative um ambiente virtual:**
    ```sh
