@@ -71,6 +71,7 @@ def login():
 def dashboard():
     if 'user_id' not in session:
         return redirect('/')
+    
     return render_template('dashboard.html')
 
 @app.route('/user_info')
@@ -80,7 +81,9 @@ def user_info():
     
     user_data = {
         "email": session.get('email'),
-        "role": session.get('role')
+        "role": session.get('role'),
+        "created_at": session.get('created_at')
+        
     }
     return jsonify(user_data)
 
@@ -143,8 +146,30 @@ def admin_panel():
         return render_template('error.html', message="Acesso negado")
     
     users = User.query.filter_by(is_anonymized=False).all()
-    users_data = [{"id": user.id, "email": user.email, "role": user.role, "active": user.is_active} for user in users]
-    return render_template('admin.html', users=users_data)
+
+    # Dados para a tabela
+    users_data = [
+        {
+            "id": user.id,
+            "email": user.email,
+            "role": user.role,
+            "active": user.is_active
+        }
+        for user in users
+    ]
+
+    # Estatísticas
+    total_users = len(users)
+    admin_count = sum(1 for user in users if user.role == 'admin')
+    active_users = sum(1 for user in users if user.is_active)
+
+    return render_template(
+        'admin.html',
+        users=users_data,
+        total_users=total_users,
+        admin_count=admin_count,
+        active_users=active_users
+    )
 
 @app.route('/api/users')
 def api_users():

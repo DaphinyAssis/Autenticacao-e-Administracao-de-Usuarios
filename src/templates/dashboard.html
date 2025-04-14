@@ -3,60 +3,466 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Dashboard Tecnológico</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            padding-top: 1rem;
-            background-color: #f8f9fa;
+        :root {
+            --primary: #3a0ca3;
+            --secondary: #4361ee;
+            --accent: #4cc9f0;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
         }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 35%, rgba(74, 58, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 75% 44%, rgba(76, 201, 240, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+        
+        .grid-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .navbar {
+            background: rgba(26, 26, 46, 0.8) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(76, 201, 240, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--accent) !important;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .navbar-brand::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            height: 2px;
+            width: 0;
+            background: linear-gradient(90deg, var(--accent), transparent);
+            transition: width 0.3s ease;
+        }
+        
+        .navbar-brand:hover::before {
+            width: 100%;
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8) !important;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            background: var(--accent);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+            left: 0;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: white !important;
+        }
+        
+        .container {
+            padding-top: 1rem;
+            position: relative;
+            z-index: 10;
+        }
+        
         .dashboard-container {
-            background-color: white;
+            background: rgba(26, 26, 46, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            border-radius: 16px;
             padding: 2rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+            position: relative;
+            overflow: hidden;
+            margin-top: 2rem;
+        }
+        
+        .dashboard-container::after {
+            content: "";
+            position: absolute;
+            height: 200%;
+            width: 200%;
+            top: -50%;
+            left: -50%;
+            background: linear-gradient(to bottom right, transparent, transparent, transparent, rgba(76, 201, 240, 0.13));
+            transform: rotate(25deg);
+            z-index: -1;
+        }
+        
+        .glow {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(76, 201, 240, 0.2) 0%, transparent 70%);
+            top: -75px;
+            right: -75px;
+        }
+        
+        h2 {
+            color: white;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            height: 3px;
+            width: 60px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+        }
+        
+        .alert-info {
+            background: rgba(76, 201, 240, 0.1);
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            color: white;
+            border-radius: 12px;
+        }
+        
+        .card {
+            background: rgba(26, 26, 46, 0.7);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(76, 201, 240, 0.2);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(76, 201, 240, 0.5);
+        }
+        
+        .card-header {
+            background: rgba(58, 12, 163, 0.3);
+            border-bottom: 1px solid rgba(76, 201, 240, 0.2);
+            color: white;
+            font-weight: 600;
+            border-radius: 12px 12px 0 0 !important;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+        }
+        
+        .card-title {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        .card-text {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .btn {
+            border-radius: 8px;
+            padding: 0.8rem 1.5rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-danger {
+            background: linear-gradient(45deg, #f72585, #b5179e);
+            border: none;
+            box-shadow: 0 4px 15px rgba(247, 37, 133, 0.4);
+        }
+        
+        .btn-danger:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(247, 37, 133, 0.5);
+            background: linear-gradient(45deg, #b5179e, #f72585);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+        }
+        
+        .btn.animated:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            animation: btn-shine 1.5s;
+        }
+        
+        @keyframes btn-shine {
+            100% {
+                left: 100%;
+            }
+        }
+        
+        /* Modal styling */
+        .modal-content {
+            background: rgba(26, 26, 46, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            border-radius: 16px;
+            color: white;
+        }
+        
+        .modal-header {
+            border-bottom: 1px solid rgba(76, 201, 240, 0.2);
+        }
+        
+        .modal-footer {
+            border-top: 1px solid rgba(76, 201, 240, 0.2);
+        }
+        
+        .btn-close {
+            filter: invert(1) brightness(200%);
+        }
+        
+        /* Added elements */
+        .user-stats {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background: rgba(26, 26, 46, 0.5);
+            border: 1px solid rgba(76, 201, 240, 0.2);
+            border-radius: 12px;
+            padding: 1.2rem;
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .stat-icon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 2rem;
+            color: rgba(76, 201, 240, 0.3);
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stat-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Glowing dots animation */
+        .dots-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+        
+        .dot {
+            position: absolute;
+            background: rgba(76, 201, 240, 0.5);
+            border-radius: 50%;
+            filter: blur(8px);
+        }
+        
+        .dot1 {
+            width: 15px;
+            height: 15px;
+            top: 10%;
+            left: 90%;
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        .dot2 {
+            width: 10px;
+            height: 10px;
+            top: 80%;
+            left: 10%;
+            animation: floating 8s ease-in-out infinite 1s;
+        }
+        
+        .dot3 {
+            width: 20px;
+            height: 20px;
+            top: 40%;
+            left: 30%;
+            animation: floating 7s ease-in-out infinite 2s;
+        }
+        
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, 20px); }
+            100% { transform: translate(0, 0px); }
         }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!-- Grid background overlay -->
+    <div class="grid-overlay"></div>
+    
+    <!-- Animated dots background -->
+    <div class="dots-container">
+        <div class="dot dot1"></div>
+        <div class="dot dot2"></div>
+        <div class="dot dot3"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">Sistema de Usuários</a>
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-cube me-2"></i>Sistema de Usuários
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="/dashboard">Dashboard</a>
+                        <a class="nav-link active" href="/dashboard">
+                            <i class="fas fa-chart-line me-1"></i>Dashboard
+                        </a>
                     </li>
                     <li class="nav-item admin-only" style="display: none;">
-                        <a class="nav-link" href="/admin">Painel Admin</a>
+                        <a class="nav-link" href="/admin">
+                            <i class="fas fa-shield-alt me-1"></i>Painel Admin
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/logout">Sair</a>
+                        <a class="nav-link" href="/logout">
+                            <i class="fas fa-sign-out-alt me-1"></i>Sair
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-4">
+    <div class="container">
         <div class="dashboard-container">
-            <h2 class="mb-4">Dashboard</h2>
+            <!-- Glow effect -->
+            <div class="glow"></div>
+            
+            <h2>Dashboard</h2>
+            
             <div class="alert alert-info" role="alert">
-                Bem-vindo <span id="user-email"></span>! Seu papel é: <span id="user-role"></span>
+                <i class="fas fa-user-circle me-2"></i>
+                Bem-vindo <span id="user-email"></span>! 
+                <span class="ms-2 badge bg-primary" style="background: rgba(67, 97, 238, 0.3) !important; border: 1px solid rgba(67, 97, 238, 0.6);">
+                    <i class="fas fa-id-badge me-1"></i>
+                    <span id="user-role"></span>
+                </span>
+            </div>
+            
+            <!-- User stats cards -->
+            <div class="user-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-value" id="user-created_at"></div>
+                    <div class="stat-label">Data de criação</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="stat-value">Ativo</div>
+                    <div class="stat-label">Status da conta</div>
+                </div>
             </div>
 
             <div class="card mb-4">
                 <div class="card-header">
-                    Ações
+                    <i class="fas fa-cogs me-2"></i>Ações
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Gerenciar sua conta</h5>
                     <p class="card-text">Você pode excluir sua conta utilizando o botão abaixo. Esta ação é irreversível e seus dados serão anonimizados.</p>
-                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
-                        Excluir Conta
+                    <button type="button" class="btn btn-danger animated" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                        <i class="fas fa-trash-alt me-2"></i>Excluir Conta
                     </button>
                 </div>
             </div>
@@ -68,15 +474,22 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="deleteModalLabel">Confirmar Exclusão</h5>
+                    <h5 class="modal-title" id="deleteModalLabel">
+                        <i class="fas fa-exclamation-triangle text-danger me-2"></i>
+                        Confirmar Exclusão
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p>Tem certeza que deseja excluir sua conta? Esta ação é irreversível e seus dados serão anonimizados.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-danger" id="confirm-delete">Confirmar Exclusão</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i>Cancelar
+                    </button>
+                    <button type="button" class="btn btn-danger animated" id="confirm-delete">
+                        <i class="fas fa-check me-2"></i>Confirmar Exclusão
+                    </button>
                 </div>
             </div>
         </div>
@@ -96,6 +509,16 @@
                 const userData = await response.json();
                 document.getElementById('user-email').textContent = userData.email;
                 document.getElementById('user-role').textContent = userData.role;
+                const date = new Date(userData.created_at);
+                const formattedDate = date.toLocaleString('pt-BR', {
+                    day: '2-digit',
+                    month: '2-digit',
+                    year: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+
+                document.getElementById('user-created_at').textContent = formattedDate;
                 
                 // Show admin link if user is admin
                 if (userData.role === 'admin') {
