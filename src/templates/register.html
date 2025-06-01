@@ -5,25 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuário</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ESTILO DO DESIGN CYBER -->
     <style>
-        body {
-            padding-top: 3rem;
-            background-color: #f8f9fa;
+        :root {
+            --primary: #3a0ca3;
+            --secondary: #4361ee;
+            --accent: #4cc9f0;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --danger: #e5383b;
         }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark);
+            color: var(--light);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 35%, rgba(74, 58, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 75% 44%, rgba(76, 201, 240, 0.1) 0%, transparent 50%);
+            z-index: -1;
+        }
+
+        .grid-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            padding-top: 5rem;
+            position: relative;
+            z-index: 10;
+        }
+
         .form-container {
+            background: rgba(26, 26, 46, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+            position: relative;
+            overflow: hidden;
             max-width: 500px;
             margin: 0 auto;
-            background-color: white;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         }
+
+        .form-container::after {
+            content: "";
+            position: absolute;
+            height: 200%;
+            width: 200%;
+            top: -50%;
+            left: -50%;
+            background: linear-gradient(to bottom right, transparent, transparent, transparent, rgba(76, 201, 240, 0.13));
+            transform: rotate(25deg);
+            z-index: -1;
+        }
+
+        h2 {
+            color: white;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            height: 4px;
+            width: 60px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+        }
+
+        .form-label {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            border-radius: 8px;
+            color: white;
+            padding: 0.8rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.25);
+            color: white;
+        }
+
+        .btn {
+            border-radius: 8px;
+            padding: 0.8rem 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border: none;
+            box-shadow: 0 4px 15px rgba(67, 97, 238, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(67, 97, 238, 0.5);
+            background: linear-gradient(45deg, var(--secondary), var(--primary));
+        }
+
+        .btn-outline-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .btn-outline-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
+            color: white;
+        }
+
         .alert {
+            background: rgba(229, 56, 59, 0.15);
+            border: 1px solid rgba(229, 56, 59, 0.3);
+            color: #ff8a8c;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
             display: none;
+        }
+
+        .invalid-feedback {
+            color: #ff8a8c;
         }
     </style>
 </head>
 <body>
+
+    <div class="grid-overlay"></div>
+
     <div class="container">
         <div class="form-container">
             <h2 class="mb-4 text-center">Registro de Usuário</h2>
@@ -110,29 +266,18 @@
                 } else {
                     document.getElementById('confirm-password').setCustomValidity('');
                 }
-                
-                if (!form.checkValidity()) {
-                    return;
-                }
-                
-                // Form data
+                if (!form.checkValidity()) return;
                 const formData = new FormData(form);
                 
                 try {
-                    const response = await fetch('/register', {
-                        method: 'POST',
-                        body: formData
-                    });
-                    
+                    const response = await fetch('/register', { method: 'POST', body: formData });
                     const data = await response.json();
                     
                     if (response.ok) {
                         successAlert.style.display = 'block';
                         form.reset();
                         form.classList.remove('was-validated');
-                        setTimeout(() => {
-                            window.location.href = '/login';
-                        }, 2000);
+                        setTimeout(() => { window.location.href = '/login'; }, 2000);
                     } else {
                         errorAlert.textContent = data.error || 'Erro ao registrar usuário.';
                         errorAlert.style.display = 'block';
