@@ -1,0 +1,850 @@
+2025-04-03 21:06:57,760 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 21:06:57,760 - [33mPress CTRL+C to quit[0m
+2025-04-03 21:06:57,762 -  * Restarting with stat
+2025-04-03 21:06:58,503 -  * Debugger is active!
+2025-04-03 21:06:58,507 -  * Debugger PIN: 792-022-818
+2025-04-03 21:07:14,121 - 127.0.0.1 - - [03/Apr/2025 21:07:14] "GET / HTTP/1.1" 200 -
+2025-04-03 21:07:14,302 - 127.0.0.1 - - [03/Apr/2025 21:07:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-03 21:07:16,206 - 127.0.0.1 - - [03/Apr/2025 21:07:16] "GET /register HTTP/1.1" 200 -
+2025-04-03 21:08:20,259 - 127.0.0.1 - - [03/Apr/2025 21:08:20] "GET /register HTTP/1.1" 200 -
+2025-04-03 21:08:23,199 - 127.0.0.1 - - [03/Apr/2025 21:08:23] "GET / HTTP/1.1" 200 -
+2025-04-03 21:08:30,459 - Novo usuário registrado: asd@gmail.com
+2025-04-03 21:08:30,460 - 127.0.0.1 - - [03/Apr/2025 21:08:30] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-03 21:08:30,675 - 127.0.0.1 - - [03/Apr/2025 21:08:30] "GET / HTTP/1.1" 200 -
+2025-04-03 21:08:43,485 - Login bem-sucedido: asd@gmail.com
+2025-04-03 21:08:43,486 - 127.0.0.1 - - [03/Apr/2025 21:08:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-03 21:08:43,492 - 127.0.0.1 - - [03/Apr/2025 21:08:43] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:08:51,499 - Link de reset gerado para: asd@gmail.com
+2025-04-03 21:08:51,499 - 127.0.0.1 - - [03/Apr/2025 21:08:51] "POST /reset_password HTTP/1.1" 200 -
+2025-04-03 21:08:59,545 - 127.0.0.1 - - [03/Apr/2025 21:08:59] "GET /register HTTP/1.1" 200 -
+2025-04-03 21:09:04,295 - Login bem-sucedido: asd@gmail.com
+2025-04-03 21:09:04,296 - 127.0.0.1 - - [03/Apr/2025 21:09:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-03 21:09:04,507 - 127.0.0.1 - - [03/Apr/2025 21:09:04] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:16:26,863 -  * Detected change in 'c:\\Users\\7QXM45HRD\\Documents\\m1-implementacao - Copia\\run.py', reloading
+2025-04-03 21:16:26,965 -  * Restarting with stat
+2025-04-03 21:16:27,638 -  * Debugger is active!
+2025-04-03 21:16:27,642 -  * Debugger PIN: 792-022-818
+2025-04-03 21:17:34,170 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 21:17:34,170 - [33mPress CTRL+C to quit[0m
+2025-04-03 21:17:34,172 -  * Restarting with stat
+2025-04-03 21:17:34,885 -  * Debugger is active!
+2025-04-03 21:17:34,888 -  * Debugger PIN: 792-022-818
+2025-04-03 21:17:38,164 - 127.0.0.1 - - [03/Apr/2025 21:17:38] "GET / HTTP/1.1" 200 -
+2025-04-03 21:17:40,606 - 127.0.0.1 - - [03/Apr/2025 21:17:40] "GET /register HTTP/1.1" 200 -
+2025-04-03 21:17:53,570 - Novo usuário registrado: teste123@gmail.com com papel: admin
+2025-04-03 21:17:53,571 - 127.0.0.1 - - [03/Apr/2025 21:17:53] "POST /register HTTP/1.1" 200 -
+2025-04-03 21:17:55,907 - 127.0.0.1 - - [03/Apr/2025 21:17:55] "GET /login HTTP/1.1" 200 -
+2025-04-03 21:18:00,755 - Login bem-sucedido: teste123@gmail.com
+2025-04-03 21:18:00,756 - 127.0.0.1 - - [03/Apr/2025 21:18:00] "POST /login HTTP/1.1" 200 -
+2025-04-03 21:18:00,776 - 127.0.0.1 - - [03/Apr/2025 21:18:00] "GET /admin HTTP/1.1" 200 -
+2025-04-03 21:18:01,076 - 127.0.0.1 - - [03/Apr/2025 21:18:01] "GET /api/users HTTP/1.1" 200 -
+2025-04-03 21:18:43,731 - 127.0.0.1 - - [03/Apr/2025 21:18:43] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:18:43,822 - 127.0.0.1 - - [03/Apr/2025 21:18:43] "GET /user_info HTTP/1.1" 200 -
+2025-04-03 21:18:51,160 - Conta anonimizada: 2
+2025-04-03 21:18:51,161 - 127.0.0.1 - - [03/Apr/2025 21:18:51] "POST /delete_account HTTP/1.1" 200 -
+2025-04-03 21:18:51,482 - 127.0.0.1 - - [03/Apr/2025 21:18:51] "GET / HTTP/1.1" 200 -
+2025-04-03 21:22:35,587 -  * Detected change in 'c:\\Users\\7QXM45HRD\\Documents\\m1-implementacao - Copia\\run.py', reloading
+2025-04-03 21:22:35,656 -  * Restarting with stat
+2025-04-03 21:22:36,355 -  * Debugger is active!
+2025-04-03 21:22:36,359 -  * Debugger PIN: 792-022-818
+2025-04-03 21:22:42,441 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-03 21:22:42,442 - [33mPress CTRL+C to quit[0m
+2025-04-03 21:22:42,443 -  * Restarting with stat
+2025-04-03 21:22:43,036 -  * Debugger is active!
+2025-04-03 21:22:43,039 -  * Debugger PIN: 792-022-818
+2025-04-03 21:22:45,607 - 127.0.0.1 - - [03/Apr/2025 21:22:45] "GET / HTTP/1.1" 200 -
+2025-04-03 21:22:47,859 - 127.0.0.1 - - [03/Apr/2025 21:22:47] "GET /register HTTP/1.1" 200 -
+2025-04-03 21:22:55,913 - Novo usuário registrado: daphi@gmail.com com papel: admin
+2025-04-03 21:22:55,913 - 127.0.0.1 - - [03/Apr/2025 21:22:55] "POST /register HTTP/1.1" 200 -
+2025-04-03 21:22:58,248 - 127.0.0.1 - - [03/Apr/2025 21:22:58] "GET /login HTTP/1.1" 200 -
+2025-04-03 21:23:02,361 - Login bem-sucedido: daphi@gmail.com
+2025-04-03 21:23:02,362 - 127.0.0.1 - - [03/Apr/2025 21:23:02] "POST /login HTTP/1.1" 200 -
+2025-04-03 21:23:02,382 - 127.0.0.1 - - [03/Apr/2025 21:23:02] "GET /admin HTTP/1.1" 200 -
+2025-04-03 21:23:02,693 - 127.0.0.1 - - [03/Apr/2025 21:23:02] "GET /api/users HTTP/1.1" 200 -
+2025-04-03 21:23:05,993 - 127.0.0.1 - - [03/Apr/2025 21:23:05] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:23:06,083 - 127.0.0.1 - - [03/Apr/2025 21:23:06] "GET /user_info HTTP/1.1" 200 -
+2025-04-03 21:23:10,372 - Conta anonimizada: 3
+2025-04-03 21:23:10,372 - 127.0.0.1 - - [03/Apr/2025 21:23:10] "POST /delete_account HTTP/1.1" 200 -
+2025-04-03 21:23:10,703 - 127.0.0.1 - - [03/Apr/2025 21:23:10] "GET / HTTP/1.1" 200 -
+2025-04-03 21:23:14,491 - 127.0.0.1 - - [03/Apr/2025 21:23:14] "GET /login HTTP/1.1" 200 -
+2025-04-03 21:23:21,153 - Login bem-sucedido: asd@gmail.com
+2025-04-03 21:23:21,153 - 127.0.0.1 - - [03/Apr/2025 21:23:21] "POST /login HTTP/1.1" 200 -
+2025-04-03 21:23:21,476 - 127.0.0.1 - - [03/Apr/2025 21:23:21] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:23:21,578 - 127.0.0.1 - - [03/Apr/2025 21:23:21] "GET /user_info HTTP/1.1" 200 -
+2025-04-03 21:23:24,052 - 127.0.0.1 - - [03/Apr/2025 21:23:24] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 21:23:24,362 - 127.0.0.1 - - [03/Apr/2025 21:23:24] "GET /user_info HTTP/1.1" 200 -
+2025-04-03 21:23:31,148 - Conta anonimizada: 1
+2025-04-03 21:23:31,148 - 127.0.0.1 - - [03/Apr/2025 21:23:31] "POST /delete_account HTTP/1.1" 200 -
+2025-04-03 21:23:31,407 - 127.0.0.1 - - [03/Apr/2025 21:23:31] "GET / HTTP/1.1" 200 -
+2025-04-03 21:58:20,078 - 127.0.0.1 - - [03/Apr/2025 21:58:20] "GET / HTTP/1.1" 200 -
+2025-04-03 21:58:28,489 - 127.0.0.1 - - [03/Apr/2025 21:58:28] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:02:20,358 - 127.0.0.1 - - [03/Apr/2025 22:02:20] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:02:21,291 - 127.0.0.1 - - [03/Apr/2025 22:02:21] "GET /reset_password HTTP/1.1" 200 -
+2025-04-03 22:02:26,816 - 127.0.0.1 - - [03/Apr/2025 22:02:26] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:02:30,589 - 127.0.0.1 - - [03/Apr/2025 22:02:30] "GET /register HTTP/1.1" 200 -
+2025-04-03 22:06:07,570 - 127.0.0.1 - - [03/Apr/2025 22:06:07] "GET / HTTP/1.1" 200 -
+2025-04-03 22:07:51,426 - 127.0.0.1 - - [03/Apr/2025 22:07:51] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:07:56,917 - 127.0.0.1 - - [03/Apr/2025 22:07:56] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:08:04,419 - Tentativa de login falha: daphi@gmail.com
+2025-04-03 22:08:04,420 - 127.0.0.1 - - [03/Apr/2025 22:08:04] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-03 22:08:13,215 - Tentativa de login falha: asd@gmail.com
+2025-04-03 22:08:13,215 - 127.0.0.1 - - [03/Apr/2025 22:08:13] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-03 22:08:14,316 - 127.0.0.1 - - [03/Apr/2025 22:08:14] "GET /register HTTP/1.1" 200 -
+2025-04-03 22:08:18,739 - Novo usuário registrado: daphi@gmail.com com papel: admin
+2025-04-03 22:08:18,739 - 127.0.0.1 - - [03/Apr/2025 22:08:18] "POST /register HTTP/1.1" 200 -
+2025-04-03 22:08:21,085 - 127.0.0.1 - - [03/Apr/2025 22:08:21] "GET /login HTTP/1.1" 200 -
+2025-04-03 22:08:25,602 - Login bem-sucedido: daphi@gmail.com
+2025-04-03 22:08:25,603 - 127.0.0.1 - - [03/Apr/2025 22:08:25] "POST /login HTTP/1.1" 200 -
+2025-04-03 22:08:26,125 - 127.0.0.1 - - [03/Apr/2025 22:08:26] "GET /admin HTTP/1.1" 200 -
+2025-04-03 22:08:26,427 - 127.0.0.1 - - [03/Apr/2025 22:08:26] "GET /api/users HTTP/1.1" 200 -
+2025-04-03 22:08:29,324 - 127.0.0.1 - - [03/Apr/2025 22:08:29] "GET /dashboard HTTP/1.1" 200 -
+2025-04-03 22:08:29,450 - 127.0.0.1 - - [03/Apr/2025 22:08:29] "GET /user_info HTTP/1.1" 200 -
+2025-04-03 22:08:38,916 - Conta anonimizada: 4
+2025-04-03 22:08:38,916 - 127.0.0.1 - - [03/Apr/2025 22:08:38] "POST /delete_account HTTP/1.1" 200 -
+2025-04-03 22:08:39,245 - 127.0.0.1 - - [03/Apr/2025 22:08:39] "GET / HTTP/1.1" 200 -
+2025-04-04 05:57:31,670 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-04 05:57:31,672 - [33mPress CTRL+C to quit[0m
+2025-04-04 05:57:31,674 -  * Restarting with stat
+2025-04-04 05:57:32,319 -  * Debugger is active!
+2025-04-04 05:57:32,323 -  * Debugger PIN: 783-716-852
+2025-04-04 05:57:41,370 - 127.0.0.1 - - [04/Apr/2025 05:57:41] "GET / HTTP/1.1" 200 -
+2025-04-04 05:57:41,628 - 127.0.0.1 - - [04/Apr/2025 05:57:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-04 05:57:46,364 - 127.0.0.1 - - [04/Apr/2025 05:57:46] "GET /login HTTP/1.1" 200 -
+2025-04-04 05:57:51,400 - Tentativa de login falha: teste123@gmail.com
+2025-04-04 05:57:51,401 - 127.0.0.1 - - [04/Apr/2025 05:57:51] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-04 05:57:57,048 - Tentativa de login falha: daphi@gmail.com
+2025-04-04 05:57:57,048 - 127.0.0.1 - - [04/Apr/2025 05:57:57] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-04 05:57:59,952 - Tentativa de login falha: daphi@gmail.com
+2025-04-04 05:57:59,952 - 127.0.0.1 - - [04/Apr/2025 05:57:59] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-04-04 05:58:01,416 - 127.0.0.1 - - [04/Apr/2025 05:58:01] "GET /register HTTP/1.1" 200 -
+2025-04-04 05:58:08,023 - Novo usuário registrado: dd@gmail.com com papel: admin
+2025-04-04 05:58:08,024 - 127.0.0.1 - - [04/Apr/2025 05:58:08] "POST /register HTTP/1.1" 200 -
+2025-04-04 05:58:10,051 - 127.0.0.1 - - [04/Apr/2025 05:58:10] "GET /login HTTP/1.1" 200 -
+2025-04-04 05:58:14,942 - Login bem-sucedido: dd@gmail.com
+2025-04-04 05:58:14,944 - 127.0.0.1 - - [04/Apr/2025 05:58:14] "POST /login HTTP/1.1" 200 -
+2025-04-04 05:58:15,779 - 127.0.0.1 - - [04/Apr/2025 05:58:15] "GET /admin HTTP/1.1" 200 -
+2025-04-04 05:58:15,900 - 127.0.0.1 - - [04/Apr/2025 05:58:15] "GET /api/users HTTP/1.1" 200 -
+2025-04-04 05:58:23,427 - 127.0.0.1 - - [04/Apr/2025 05:58:23] "GET /dashboard HTTP/1.1" 200 -
+2025-04-04 05:58:23,709 - 127.0.0.1 - - [04/Apr/2025 05:58:23] "GET /user_info HTTP/1.1" 200 -
+2025-04-04 05:58:34,631 - 127.0.0.1 - - [04/Apr/2025 05:58:34] "GET /dashboard HTTP/1.1" 200 -
+2025-04-04 05:58:34,711 - 127.0.0.1 - - [04/Apr/2025 05:58:34] "GET /user_info HTTP/1.1" 200 -
+2025-04-05 16:42:18,079 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-05 16:42:18,079 - [33mPress CTRL+C to quit[0m
+2025-04-05 16:42:18,082 -  * Restarting with stat
+2025-04-05 16:42:18,629 -  * Debugger is active!
+2025-04-05 16:42:18,633 -  * Debugger PIN: 118-107-358
+2025-04-05 16:42:24,010 - 127.0.0.1 - - [05/Apr/2025 16:42:24] "GET / HTTP/1.1" 200 -
+2025-04-05 16:42:24,272 - 127.0.0.1 - - [05/Apr/2025 16:42:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-05 16:42:30,092 - 127.0.0.1 - - [05/Apr/2025 16:42:30] "GET /login HTTP/1.1" 200 -
+2025-04-05 16:43:51,333 - 127.0.0.1 - - [05/Apr/2025 16:43:51] "GET / HTTP/1.1" 200 -
+2025-04-05 16:43:59,424 - 127.0.0.1 - - [05/Apr/2025 16:43:59] "GET /login HTTP/1.1" 200 -
+2025-04-05 16:45:41,104 - 127.0.0.1 - - [05/Apr/2025 16:45:41] "GET /register HTTP/1.1" 200 -
+2025-04-05 16:45:49,507 - Novo usuário registrado: asdd@asdd com papel: admin
+2025-04-05 16:45:49,508 - 127.0.0.1 - - [05/Apr/2025 16:45:49] "POST /register HTTP/1.1" 200 -
+2025-04-05 16:45:51,533 - 127.0.0.1 - - [05/Apr/2025 16:45:51] "GET /login HTTP/1.1" 200 -
+2025-04-05 16:45:55,498 - Login bem-sucedido: asdd@asdd
+2025-04-05 16:45:55,499 - 127.0.0.1 - - [05/Apr/2025 16:45:55] "POST /login HTTP/1.1" 200 -
+2025-04-05 16:45:56,357 - 127.0.0.1 - - [05/Apr/2025 16:45:56] "GET /admin HTTP/1.1" 200 -
+2025-04-05 16:45:56,464 - 127.0.0.1 - - [05/Apr/2025 16:45:56] "GET /api/users HTTP/1.1" 200 -
+2025-04-05 16:46:01,596 - 127.0.0.1 - - [05/Apr/2025 16:46:01] "GET /dashboard HTTP/1.1" 200 -
+2025-04-05 16:46:01,900 - 127.0.0.1 - - [05/Apr/2025 16:46:01] "GET /user_info HTTP/1.1" 200 -
+2025-04-05 16:51:32,369 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:32,439 -  * Restarting with stat
+2025-04-05 16:51:32,979 -  * Debugger is active!
+2025-04-05 16:51:32,981 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:34,008 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:34,071 -  * Restarting with stat
+2025-04-05 16:51:34,656 -  * Debugger is active!
+2025-04-05 16:51:34,658 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:36,689 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:36,747 -  * Restarting with stat
+2025-04-05 16:51:37,276 -  * Debugger is active!
+2025-04-05 16:51:37,278 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:39,319 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:39,387 -  * Restarting with stat
+2025-04-05 16:51:39,948 -  * Debugger is active!
+2025-04-05 16:51:39,950 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:40,967 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:41,042 -  * Restarting with stat
+2025-04-05 16:51:41,671 -  * Debugger is active!
+2025-04-05 16:51:41,673 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:42,702 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:42,776 -  * Restarting with stat
+2025-04-05 16:51:43,381 -  * Debugger is active!
+2025-04-05 16:51:43,385 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:44,414 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:44,508 -  * Restarting with stat
+2025-04-05 16:51:45,117 -  * Debugger is active!
+2025-04-05 16:51:45,119 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:47,154 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:47,233 -  * Restarting with stat
+2025-04-05 16:51:47,814 -  * Debugger is active!
+2025-04-05 16:51:47,816 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:48,847 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:48,923 -  * Restarting with stat
+2025-04-05 16:51:49,430 -  * Debugger is active!
+2025-04-05 16:51:49,432 -  * Debugger PIN: 118-107-358
+2025-04-05 16:51:50,447 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:51:50,528 -  * Restarting with stat
+2025-04-05 16:51:51,118 -  * Debugger is active!
+2025-04-05 16:51:51,121 -  * Debugger PIN: 118-107-358
+2025-04-05 16:54:32,906 -  * Detected change in 'C:\\Users\\7QXM45HRD\\Documents\\m1-implementacao\\run.py', reloading
+2025-04-05 16:54:32,976 -  * Restarting with stat
+2025-04-05 16:54:33,492 -  * Debugger is active!
+2025-04-05 16:54:33,494 -  * Debugger PIN: 118-107-358
+2025-05-31 17:35:43,367 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 17:35:43,368 - [33mPress CTRL+C to quit[0m
+2025-05-31 17:35:43,407 -  * Restarting with stat
+2025-05-31 17:35:48,370 -  * Debugger is active!
+2025-05-31 17:35:48,660 -  * Debugger PIN: 118-406-736
+2025-05-31 17:38:25,352 - 127.0.0.1 - - [31/May/2025 17:38:25] "GET / HTTP/1.1" 200 -
+2025-05-31 17:38:25,638 - 127.0.0.1 - - [31/May/2025 17:38:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-31 17:40:27,423 - 127.0.0.1 - - [31/May/2025 17:40:27] "GET /register HTTP/1.1" 200 -
+2025-05-31 17:41:26,486 - 127.0.0.1 - - [31/May/2025 17:41:26] "GET /login HTTP/1.1" 200 -
+2025-05-31 17:48:11,296 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 17:48:11,469 -  * Restarting with stat
+2025-05-31 17:48:12,740 -  * Debugger is active!
+2025-05-31 17:48:12,748 -  * Debugger PIN: 118-406-736
+2025-05-31 17:56:17,112 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 17:56:17,377 -  * Restarting with stat
+2025-05-31 17:56:18,668 -  * Debugger is active!
+2025-05-31 17:56:18,676 -  * Debugger PIN: 118-406-736
+2025-05-31 17:56:23,170 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 17:56:23,469 -  * Restarting with stat
+2025-05-31 17:56:25,241 -  * Debugger is active!
+2025-05-31 17:56:25,246 -  * Debugger PIN: 118-406-736
+2025-05-31 17:56:39,754 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 17:56:39,846 -  * Restarting with stat
+2025-05-31 17:56:41,230 -  * Debugger is active!
+2025-05-31 17:56:41,234 -  * Debugger PIN: 118-406-736
+2025-05-31 17:57:02,000 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 17:57:02,118 -  * Restarting with stat
+2025-05-31 17:57:03,374 -  * Debugger is active!
+2025-05-31 17:57:03,379 -  * Debugger PIN: 118-406-736
+2025-05-31 17:57:21,045 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 17:57:21,160 -  * Restarting with stat
+2025-05-31 17:57:22,410 -  * Debugger is active!
+2025-05-31 17:57:22,414 -  * Debugger PIN: 118-406-736
+2025-05-31 17:57:31,531 - 127.0.0.1 - - [31/May/2025 17:57:31] "GET /login HTTP/1.1" 200 -
+2025-05-31 17:57:40,863 - Tentativa login: asd@gmail.com - IP: 127.0.0.1
+2025-05-31 17:57:40,876 - Tentativa de login falha: asd@gmail.com
+2025-05-31 17:57:40,876 - LOGIN SUCESSO: asd@gmail.com - IP: 127.0.0.1 - Duração: 0.013s
+2025-05-31 17:57:40,877 - 127.0.0.1 - - [31/May/2025 17:57:40] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 17:57:42,015 - Tentativa login: asd@gmail.com - IP: 127.0.0.1
+2025-05-31 17:57:42,020 - Tentativa de login falha: asd@gmail.com
+2025-05-31 17:57:42,020 - LOGIN SUCESSO: asd@gmail.com - IP: 127.0.0.1 - Duração: 0.005s
+2025-05-31 17:57:42,021 - 127.0.0.1 - - [31/May/2025 17:57:42] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 17:57:42,806 - Tentativa login: asd@gmail.com - IP: 127.0.0.1
+2025-05-31 17:57:42,808 - Tentativa de login falha: asd@gmail.com
+2025-05-31 17:57:42,808 - LOGIN SUCESSO: asd@gmail.com - IP: 127.0.0.1 - Duração: 0.002s
+2025-05-31 17:57:42,808 - 127.0.0.1 - - [31/May/2025 17:57:42] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 17:57:43,509 - Tentativa login: asd@gmail.com - IP: 127.0.0.1
+2025-05-31 17:57:43,511 - Tentativa de login falha: asd@gmail.com
+2025-05-31 17:57:43,511 - LOGIN SUCESSO: asd@gmail.com - IP: 127.0.0.1 - Duração: 0.002s
+2025-05-31 17:57:43,512 - 127.0.0.1 - - [31/May/2025 17:57:43] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 17:57:44,603 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 17:57:44,604 - 127.0.0.1 - - [31/May/2025 17:57:44] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 17:57:58,452 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 17:57:58,604 -  * Restarting with stat
+2025-05-31 17:58:00,319 -  * Debugger is active!
+2025-05-31 17:58:00,328 -  * Debugger PIN: 118-406-736
+2025-05-31 18:00:02,942 - 127.0.0.1 - - [31/May/2025 18:00:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:01:32,333 - 127.0.0.1 - - [31/May/2025 18:01:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:02:23,989 - 127.0.0.1 - - [31/May/2025 18:02:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:03:10,239 - 127.0.0.1 - - [31/May/2025 18:03:10] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:03:10,322 - 127.0.0.1 - - [31/May/2025 18:03:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:05:12,951 - 127.0.0.1 - - [31/May/2025 18:05:12] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:05:30,772 - 127.0.0.1 - - [31/May/2025 18:05:30] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+2025-05-31 18:05:39,603 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 18:05:39,604 - 127.0.0.1 - - [31/May/2025 18:05:39] "[31m[1mPOST /register HTTP/1.1[0m" 429 -
+2025-05-31 18:05:58,556 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 18:05:58,556 - 127.0.0.1 - - [31/May/2025 18:05:58] "[31m[1mPOST /register HTTP/1.1[0m" 429 -
+2025-05-31 18:06:12,805 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 18:06:12,805 - [33mPress CTRL+C to quit[0m
+2025-05-31 18:06:12,807 -  * Restarting with stat
+2025-05-31 18:06:14,203 -  * Debugger is active!
+2025-05-31 18:06:14,207 -  * Debugger PIN: 118-406-736
+2025-05-31 18:06:16,338 - Tentativa register: admin01@gmail.com - IP: 127.0.0.1
+2025-05-31 18:06:16,502 - Novo usuário registrado: admin01@gmail.com com papel: admin
+2025-05-31 18:06:16,502 - REGISTRO SUCESSO: admin01@gmail.com - IP: 127.0.0.1 - Duração: 0.164s
+2025-05-31 18:06:16,503 - 127.0.0.1 - - [31/May/2025 18:06:16] "POST /register HTTP/1.1" 200 -
+2025-05-31 18:06:18,538 - 127.0.0.1 - - [31/May/2025 18:06:18] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:06:30,779 - Tentativa login: admin01@gmail.com - IP: 127.0.0.1
+2025-05-31 18:06:30,963 - Login bem-sucedido: admin01@gmail.com
+2025-05-31 18:06:30,964 - LOGIN SUCESSO: admin01@gmail.com - IP: 127.0.0.1 - Duração: 0.185s
+2025-05-31 18:06:31,042 - 127.0.0.1 - - [31/May/2025 18:06:31] "POST /login HTTP/1.1" 200 -
+2025-05-31 18:06:31,947 - 127.0.0.1 - - [31/May/2025 18:06:31] "GET /admin HTTP/1.1" 200 -
+2025-05-31 18:06:31,979 - 127.0.0.1 - - [31/May/2025 18:06:31] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 18:06:36,890 - 127.0.0.1 - - [31/May/2025 18:06:36] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 18:06:37,141 - 127.0.0.1 - - [31/May/2025 18:06:37] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 18:09:16,732 - 127.0.0.1 - - [31/May/2025 18:09:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-31 18:09:16,891 - 127.0.0.1 - - [31/May/2025 18:09:16] "GET / HTTP/1.1" 200 -
+2025-05-31 18:09:23,545 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 18:09:23,546 - 127.0.0.1 - - [31/May/2025 18:09:23] "[31m[1mGET /register HTTP/1.1[0m" 429 -
+2025-05-31 18:09:35,652 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 18:09:35,653 - 127.0.0.1 - - [31/May/2025 18:09:35] "[31m[1mGET /register HTTP/1.1[0m" 429 -
+2025-05-31 18:10:00,262 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:10:00,368 -  * Restarting with stat
+2025-05-31 18:10:01,570 -  * Debugger is active!
+2025-05-31 18:10:01,576 -  * Debugger PIN: 118-406-736
+2025-05-31 18:10:03,745 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:10:03,909 -  * Restarting with stat
+2025-05-31 18:10:05,430 -  * Debugger is active!
+2025-05-31 18:10:05,436 -  * Debugger PIN: 118-406-736
+2025-05-31 18:10:07,616 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:10:07,742 -  * Restarting with stat
+2025-05-31 18:10:12,684 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 18:10:12,685 - [33mPress CTRL+C to quit[0m
+2025-05-31 18:10:12,686 -  * Restarting with stat
+2025-05-31 18:10:13,875 -  * Debugger is active!
+2025-05-31 18:10:13,882 -  * Debugger PIN: 118-406-736
+2025-05-31 18:10:13,987 - 127.0.0.1 - - [31/May/2025 18:10:13] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:10:26,369 - 127.0.0.1 - - [31/May/2025 18:10:26] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:10:31,872 - 127.0.0.1 - - [31/May/2025 18:10:31] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:12:47,250 - 127.0.0.1 - - [31/May/2025 18:12:47] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:12:47,336 - 127.0.0.1 - - [31/May/2025 18:12:47] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:16:15,981 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:16:16,133 -  * Restarting with stat
+2025-05-31 18:16:19,347 -  * Debugger is active!
+2025-05-31 18:16:19,356 -  * Debugger PIN: 118-406-736
+2025-05-31 18:16:22,722 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:16:23,106 -  * Restarting with stat
+2025-05-31 18:16:26,159 -  * Debugger is active!
+2025-05-31 18:16:26,171 -  * Debugger PIN: 118-406-736
+2025-05-31 18:16:29,446 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:16:30,189 -  * Restarting with stat
+2025-05-31 18:16:32,540 -  * Debugger is active!
+2025-05-31 18:16:32,551 -  * Debugger PIN: 118-406-736
+2025-05-31 18:16:41,918 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:16:42,456 -  * Restarting with stat
+2025-05-31 18:16:45,345 -  * Debugger is active!
+2025-05-31 18:16:45,356 -  * Debugger PIN: 118-406-736
+2025-05-31 18:18:56,624 - 127.0.0.1 - - [31/May/2025 18:18:56] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:22:01,349 - 127.0.0.1 - - [31/May/2025 18:22:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:24:33,037 - 127.0.0.1 - - [31/May/2025 18:24:33] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:24:33,149 - 127.0.0.1 - - [31/May/2025 18:24:33] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:24:48,010 - 127.0.0.1 - - [31/May/2025 18:24:48] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:24:48,309 - 127.0.0.1 - - [31/May/2025 18:24:48] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:25:06,019 - 127.0.0.1 - - [31/May/2025 18:25:06] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:25:06,043 - 127.0.0.1 - - [31/May/2025 18:25:06] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:25:24,099 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 18:25:24,105 - 127.0.0.1 - - [31/May/2025 18:25:24] "[31m[1mGET /register HTTP/1.1[0m" 429 -
+2025-05-31 18:25:24,404 - 127.0.0.1 - - [31/May/2025 18:25:24] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:25:52,467 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 18:25:52,467 - [33mPress CTRL+C to quit[0m
+2025-05-31 18:25:52,469 -  * Restarting with stat
+2025-05-31 18:25:53,417 -  * Debugger is active!
+2025-05-31 18:25:53,422 -  * Debugger PIN: 118-406-736
+2025-05-31 18:26:00,780 - 127.0.0.1 - - [31/May/2025 18:26:00] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:26:00,800 - 127.0.0.1 - - [31/May/2025 18:26:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:26:20,872 - 127.0.0.1 - - [31/May/2025 18:26:20] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:26:21,170 - 127.0.0.1 - - [31/May/2025 18:26:21] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:26:32,878 - 127.0.0.1 - - [31/May/2025 18:26:32] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:26:33,134 - 127.0.0.1 - - [31/May/2025 18:26:33] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:30:27,849 - 127.0.0.1 - - [31/May/2025 18:30:27] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:30:27,884 - 127.0.0.1 - - [31/May/2025 18:30:27] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 18:36:57,376 - 127.0.0.1 - - [31/May/2025 18:36:57] "GET / HTTP/1.1" 200 -
+2025-05-31 18:37:12,402 - 127.0.0.1 - - [31/May/2025 18:37:12] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:37:18,211 - 127.0.0.1 - - [31/May/2025 18:37:18] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:37:46,213 - 127.0.0.1 - - [31/May/2025 18:37:46] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+2025-05-31 18:37:59,920 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 18:37:59,920 - 127.0.0.1 - - [31/May/2025 18:37:59] "[31m[1mPOST /register HTTP/1.1[0m" 429 -
+2025-05-31 18:38:10,552 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 18:38:10,553 - [33mPress CTRL+C to quit[0m
+2025-05-31 18:38:10,563 -  * Restarting with stat
+2025-05-31 18:38:12,143 -  * Debugger is active!
+2025-05-31 18:38:12,148 -  * Debugger PIN: 118-406-736
+2025-05-31 18:38:13,241 - 127.0.0.1 - - [31/May/2025 18:38:13] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:38:23,154 - Tentativa register: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 18:38:23,372 - Novo usuário registrado: admin02@gmail.com com papel: admin
+2025-05-31 18:38:23,372 - REGISTRO SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.217s
+2025-05-31 18:38:23,373 - 127.0.0.1 - - [31/May/2025 18:38:23] "POST /register HTTP/1.1" 200 -
+2025-05-31 18:38:25,404 - 127.0.0.1 - - [31/May/2025 18:38:25] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:38:33,508 - Tentativa login: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 18:38:33,782 - Login bem-sucedido: admin02@gmail.com
+2025-05-31 18:38:33,783 - LOGIN SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.275s
+2025-05-31 18:38:33,785 - 127.0.0.1 - - [31/May/2025 18:38:33] "POST /login HTTP/1.1" 200 -
+2025-05-31 18:38:34,642 - 127.0.0.1 - - [31/May/2025 18:38:34] "GET /admin HTTP/1.1" 200 -
+2025-05-31 18:38:34,689 - 127.0.0.1 - - [31/May/2025 18:38:34] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 18:39:24,289 - 127.0.0.1 - - [31/May/2025 18:39:24] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 18:39:24,585 - 127.0.0.1 - - [31/May/2025 18:39:24] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 18:40:09,262 - 127.0.0.1 - - [31/May/2025 18:40:09] "GET /admin HTTP/1.1" 200 -
+2025-05-31 18:40:09,380 - 127.0.0.1 - - [31/May/2025 18:40:09] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 18:40:39,515 - 127.0.0.1 - - [31/May/2025 18:40:39] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 18:40:39,829 - 127.0.0.1 - - [31/May/2025 18:40:39] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 18:41:44,750 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:41:44,901 -  * Restarting with stat
+2025-05-31 18:41:46,197 -  * Debugger is active!
+2025-05-31 18:41:46,201 -  * Debugger PIN: 118-406-736
+2025-05-31 18:42:06,946 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:42:07,036 -  * Restarting with stat
+2025-05-31 18:42:22,544 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 18:42:22,544 - [33mPress CTRL+C to quit[0m
+2025-05-31 18:42:22,550 -  * Restarting with stat
+2025-05-31 18:42:23,998 -  * Debugger is active!
+2025-05-31 18:42:23,999 -  * Debugger PIN: 118-406-736
+2025-05-31 18:42:24,116 - Conta anonimizada: 8
+2025-05-31 18:42:24,129 - 127.0.0.1 - - [31/May/2025 18:42:24] "POST /delete_account HTTP/1.1" 200 -
+2025-05-31 18:42:24,166 - 127.0.0.1 - - [31/May/2025 18:42:24] "GET / HTTP/1.1" 200 -
+2025-05-31 18:42:29,336 - 127.0.0.1 - - [31/May/2025 18:42:29] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:44:37,823 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:44:37,889 -  * Restarting with stat
+2025-05-31 18:44:38,708 -  * Debugger is active!
+2025-05-31 18:44:38,712 -  * Debugger PIN: 118-406-736
+2025-05-31 18:44:56,249 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 18:44:56,329 -  * Restarting with stat
+2025-05-31 18:45:16,829 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 18:45:16,829 - [33mPress CTRL+C to quit[0m
+2025-05-31 18:45:16,829 -  * Restarting with stat
+2025-05-31 18:45:17,489 -  * Debugger is active!
+2025-05-31 18:45:17,489 -  * Debugger PIN: 118-406-736
+2025-05-31 18:54:30,024 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 18:54:30,024 - [33mPress CTRL+C to quit[0m
+2025-05-31 18:54:30,028 -  * Restarting with stat
+2025-05-31 18:54:31,286 -  * Debugger is active!
+2025-05-31 18:54:31,310 -  * Debugger PIN: 118-406-736
+2025-05-31 18:54:36,755 - 127.0.0.1 - - [31/May/2025 18:54:36] "GET / HTTP/1.1" 200 -
+2025-05-31 18:54:50,746 - 127.0.0.1 - - [31/May/2025 18:54:50] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:55:13,688 - 127.0.0.1 - - [31/May/2025 18:55:13] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+2025-05-31 18:55:25,899 - Tentativa register: admin01@gmail.com - IP: 127.0.0.1
+2025-05-31 18:55:26,033 - REGISTRO SUCESSO: admin01@gmail.com - IP: 127.0.0.1 - Duração: 0.134s
+2025-05-31 18:55:26,034 - 127.0.0.1 - - [31/May/2025 18:55:26] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+2025-05-31 18:55:30,359 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 18:55:30,361 - 127.0.0.1 - - [31/May/2025 18:55:30] "[31m[1mPOST /register HTTP/1.1[0m" 429 -
+2025-05-31 18:55:38,160 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 18:55:38,160 - [33mPress CTRL+C to quit[0m
+2025-05-31 18:55:38,162 -  * Restarting with stat
+2025-05-31 18:55:39,470 -  * Debugger is active!
+2025-05-31 18:55:39,479 -  * Debugger PIN: 118-406-736
+2025-05-31 18:55:41,243 - 127.0.0.1 - - [31/May/2025 18:55:41] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:55:46,426 - Tentativa login: admin01@gmail.com - IP: 127.0.0.1
+2025-05-31 18:55:46,671 - Tentativa de login falha: admin01@gmail.com
+2025-05-31 18:55:46,672 - LOGIN SUCESSO: admin01@gmail.com - IP: 127.0.0.1 - Duração: 0.246s
+2025-05-31 18:55:46,672 - 127.0.0.1 - - [31/May/2025 18:55:46] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 18:55:47,701 - Tentativa login: admin01@gmail.com - IP: 127.0.0.1
+2025-05-31 18:55:47,914 - Tentativa de login falha: admin01@gmail.com
+2025-05-31 18:55:47,915 - LOGIN SUCESSO: admin01@gmail.com - IP: 127.0.0.1 - Duração: 0.213s
+2025-05-31 18:55:47,915 - 127.0.0.1 - - [31/May/2025 18:55:47] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 18:55:49,398 - Tentativa login: admin01@gmail.com - IP: 127.0.0.1
+2025-05-31 18:55:49,611 - Tentativa de login falha: admin01@gmail.com
+2025-05-31 18:55:49,611 - LOGIN SUCESSO: admin01@gmail.com - IP: 127.0.0.1 - Duração: 0.213s
+2025-05-31 18:55:49,612 - 127.0.0.1 - - [31/May/2025 18:55:49] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 18:55:50,411 - Tentativa login: admin01@gmail.com - IP: 127.0.0.1
+2025-05-31 18:55:50,611 - Tentativa de login falha: admin01@gmail.com
+2025-05-31 18:55:50,611 - LOGIN SUCESSO: admin01@gmail.com - IP: 127.0.0.1 - Duração: 0.200s
+2025-05-31 18:55:50,612 - 127.0.0.1 - - [31/May/2025 18:55:50] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 18:55:51,539 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:55:51,539 - 127.0.0.1 - - [31/May/2025 18:55:51] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:55:52,154 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:55:52,155 - 127.0.0.1 - - [31/May/2025 18:55:52] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:01,138 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:01,138 - 127.0.0.1 - - [31/May/2025 18:56:01] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:01,676 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:01,677 - 127.0.0.1 - - [31/May/2025 18:56:01] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:02,717 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:02,718 - 127.0.0.1 - - [31/May/2025 18:56:02] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:03,281 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:03,284 - 127.0.0.1 - - [31/May/2025 18:56:03] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:04,200 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:04,201 - 127.0.0.1 - - [31/May/2025 18:56:04] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:04,702 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:04,702 - 127.0.0.1 - - [31/May/2025 18:56:04] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:05,569 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:05,569 - 127.0.0.1 - - [31/May/2025 18:56:05] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:05,999 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:06,000 - 127.0.0.1 - - [31/May/2025 18:56:06] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:06,849 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:06,849 - 127.0.0.1 - - [31/May/2025 18:56:06] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:07,329 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:07,330 - 127.0.0.1 - - [31/May/2025 18:56:07] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:08,180 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:08,181 - 127.0.0.1 - - [31/May/2025 18:56:08] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:08,632 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:08,633 - 127.0.0.1 - - [31/May/2025 18:56:08] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:09,596 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:09,597 - 127.0.0.1 - - [31/May/2025 18:56:09] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:09,849 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:56:09,850 - 127.0.0.1 - - [31/May/2025 18:56:09] "[31m[1mGET /login HTTP/1.1[0m" 429 -
+2025-05-31 18:56:17,294 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 18:56:17,294 - [33mPress CTRL+C to quit[0m
+2025-05-31 18:56:17,297 -  * Restarting with stat
+2025-05-31 18:56:18,497 -  * Debugger is active!
+2025-05-31 18:56:18,502 -  * Debugger PIN: 118-406-736
+2025-05-31 18:56:18,575 - 127.0.0.1 - - [31/May/2025 18:56:18] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:56:37,639 - 127.0.0.1 - - [31/May/2025 18:56:37] "GET /register HTTP/1.1" 200 -
+2025-05-31 18:57:00,253 - Tentativa register: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 18:57:00,447 - Novo usuário registrado: admin02@gmail.com com papel: admin
+2025-05-31 18:57:00,447 - REGISTRO SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.194s
+2025-05-31 18:57:00,448 - 127.0.0.1 - - [31/May/2025 18:57:00] "POST /register HTTP/1.1" 200 -
+2025-05-31 18:57:02,793 - 127.0.0.1 - - [31/May/2025 18:57:02] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:57:11,819 - 127.0.0.1 - - [31/May/2025 18:57:11] "GET /reset_password HTTP/1.1" 200 -
+2025-05-31 18:57:27,199 - Link de reset gerado para: admin02@gmail.com
+2025-05-31 18:57:27,200 - 127.0.0.1 - - [31/May/2025 18:57:27] "POST /reset_password HTTP/1.1" 200 -
+2025-05-31 18:57:40,640 - 127.0.0.1 - - [31/May/2025 18:57:40] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:57:50,470 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 18:57:50,471 - 127.0.0.1 - - [31/May/2025 18:57:50] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 18:57:59,143 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 18:57:59,143 - [33mPress CTRL+C to quit[0m
+2025-05-31 18:57:59,149 -  * Restarting with stat
+2025-05-31 18:58:00,933 -  * Debugger is active!
+2025-05-31 18:58:00,940 -  * Debugger PIN: 118-406-736
+2025-05-31 18:58:01,040 - 127.0.0.1 - - [31/May/2025 18:58:01] "GET /login HTTP/1.1" 200 -
+2025-05-31 18:58:09,603 - Tentativa login: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 18:58:09,798 - Login bem-sucedido: admin02@gmail.com
+2025-05-31 18:58:09,799 - LOGIN SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.195s
+2025-05-31 18:58:09,800 - 127.0.0.1 - - [31/May/2025 18:58:09] "POST /login HTTP/1.1" 200 -
+2025-05-31 18:58:10,326 - 127.0.0.1 - - [31/May/2025 18:58:10] "GET /admin HTTP/1.1" 200 -
+2025-05-31 18:58:10,631 - 127.0.0.1 - - [31/May/2025 18:58:10] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 18:58:16,014 - 127.0.0.1 - - [31/May/2025 18:58:16] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 18:58:16,135 - 127.0.0.1 - - [31/May/2025 18:58:16] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 18:59:52,047 - 127.0.0.1 - - [31/May/2025 18:59:52] "GET /admin HTTP/1.1" 200 -
+2025-05-31 18:59:52,155 - 127.0.0.1 - - [31/May/2025 18:59:52] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 19:00:00,217 - 127.0.0.1 - - [31/May/2025 19:00:00] "GET / HTTP/1.1" 200 -
+2025-05-31 19:00:07,190 - 127.0.0.1 - - [31/May/2025 19:00:07] "GET /register HTTP/1.1" 200 -
+2025-05-31 19:00:20,827 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 19:00:20,828 - 127.0.0.1 - - [31/May/2025 19:00:20] "[31m[1mPOST /register HTTP/1.1[0m" 429 -
+2025-05-31 19:00:31,486 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:00:31,486 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:00:31,491 -  * Restarting with stat
+2025-05-31 19:00:33,339 -  * Debugger is active!
+2025-05-31 19:00:33,346 -  * Debugger PIN: 118-406-736
+2025-05-31 19:00:34,773 - 127.0.0.1 - - [31/May/2025 19:00:34] "GET /admin HTTP/1.1" 200 -
+2025-05-31 19:00:34,802 - 127.0.0.1 - - [31/May/2025 19:00:34] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 19:00:36,059 - 127.0.0.1 - - [31/May/2025 19:00:36] "GET /register HTTP/1.1" 200 -
+2025-05-31 19:00:49,058 - Tentativa register: user02@gmail.com - IP: 127.0.0.1
+2025-05-31 19:00:49,236 - Novo usuário registrado: user02@gmail.com com papel: user
+2025-05-31 19:00:49,237 - REGISTRO SUCESSO: user02@gmail.com - IP: 127.0.0.1 - Duração: 0.179s
+2025-05-31 19:00:49,238 - 127.0.0.1 - - [31/May/2025 19:00:49] "POST /register HTTP/1.1" 200 -
+2025-05-31 19:00:51,600 - 127.0.0.1 - - [31/May/2025 19:00:51] "GET /login HTTP/1.1" 200 -
+2025-05-31 19:01:04,777 - Tentativa login: user02@gmail.com - IP: 127.0.0.1
+2025-05-31 19:01:05,076 - Login bem-sucedido: user02@gmail.com
+2025-05-31 19:01:05,077 - LOGIN SUCESSO: user02@gmail.com - IP: 127.0.0.1 - Duração: 0.300s
+2025-05-31 19:01:05,078 - 127.0.0.1 - - [31/May/2025 19:01:05] "POST /login HTTP/1.1" 200 -
+2025-05-31 19:01:05,943 - 127.0.0.1 - - [31/May/2025 19:01:05] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:01:06,178 - 127.0.0.1 - - [31/May/2025 19:01:06] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:01:12,583 - 127.0.0.1 - - [31/May/2025 19:01:12] "GET /admin HTTP/1.1" 200 -
+2025-05-31 19:01:12,890 - 127.0.0.1 - - [31/May/2025 19:01:12] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 19:01:35,014 - Conta anonimizada: 10
+2025-05-31 19:01:35,015 - 127.0.0.1 - - [31/May/2025 19:01:35] "POST /delete_account HTTP/1.1" 200 -
+2025-05-31 19:01:35,349 - 127.0.0.1 - - [31/May/2025 19:01:35] "GET / HTTP/1.1" 200 -
+2025-05-31 19:01:38,782 - 127.0.0.1 - - [31/May/2025 19:01:38] "GET /admin HTTP/1.1" 200 -
+2025-05-31 19:01:38,836 - 127.0.0.1 - - [31/May/2025 19:01:38] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 19:01:47,862 - 127.0.0.1 - - [31/May/2025 19:01:47] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:01:48,160 - 127.0.0.1 - - [31/May/2025 19:01:48] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:01:51,900 - Conta anonimizada: 9
+2025-05-31 19:01:51,902 - 127.0.0.1 - - [31/May/2025 19:01:51] "POST /delete_account HTTP/1.1" 200 -
+2025-05-31 19:01:52,101 - 127.0.0.1 - - [31/May/2025 19:01:52] "GET / HTTP/1.1" 200 -
+2025-05-31 19:01:59,386 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 19:01:59,387 - 127.0.0.1 - - [31/May/2025 19:01:59] "[31m[1mGET /register HTTP/1.1[0m" 429 -
+2025-05-31 19:02:02,979 - 127.0.0.1 - - [31/May/2025 19:02:02] "GET / HTTP/1.1" 200 -
+2025-05-31 19:02:14,422 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 19:02:14,423 - 127.0.0.1 - - [31/May/2025 19:02:14] "[31m[1mGET /register HTTP/1.1[0m" 429 -
+2025-05-31 19:04:32,751 - 127.0.0.1 - - [31/May/2025 19:04:32] "GET /login HTTP/1.1" 200 -
+2025-05-31 19:04:46,367 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 19:04:46,368 - 127.0.0.1 - - [31/May/2025 19:04:46] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 19:04:50,798 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 19:04:50,799 - 127.0.0.1 - - [31/May/2025 19:04:50] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 19:04:52,440 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 19:04:52,440 - 127.0.0.1 - - [31/May/2025 19:04:52] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 19:04:54,408 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 19:04:54,408 - 127.0.0.1 - - [31/May/2025 19:04:54] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 19:04:58,358 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 19:04:58,358 - 127.0.0.1 - - [31/May/2025 19:04:58] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 19:05:06,442 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:05:06,443 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:05:06,448 -  * Restarting with stat
+2025-05-31 19:05:09,205 -  * Debugger is active!
+2025-05-31 19:05:09,288 -  * Debugger PIN: 118-406-736
+2025-05-31 19:05:09,454 - Tentativa login: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 19:05:09,471 - Tentativa de login falha: admin02@gmail.com
+2025-05-31 19:05:09,471 - LOGIN SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.018s
+2025-05-31 19:05:09,473 - 127.0.0.1 - - [31/May/2025 19:05:09] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 19:05:16,684 - 127.0.0.1 - - [31/May/2025 19:05:16] "GET /register HTTP/1.1" 200 -
+2025-05-31 19:05:26,706 - Tentativa register: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 19:05:26,904 - Novo usuário registrado: admin02@gmail.com com papel: admin
+2025-05-31 19:05:26,905 - REGISTRO SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.199s
+2025-05-31 19:05:26,906 - 127.0.0.1 - - [31/May/2025 19:05:26] "POST /register HTTP/1.1" 200 -
+2025-05-31 19:05:29,265 - 127.0.0.1 - - [31/May/2025 19:05:29] "GET /login HTTP/1.1" 200 -
+2025-05-31 19:05:37,175 - Tentativa login: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 19:05:37,435 - Login bem-sucedido: admin02@gmail.com
+2025-05-31 19:05:37,436 - LOGIN SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.261s
+2025-05-31 19:05:37,438 - 127.0.0.1 - - [31/May/2025 19:05:37] "POST /login HTTP/1.1" 200 -
+2025-05-31 19:05:37,990 - 127.0.0.1 - - [31/May/2025 19:05:37] "GET /admin HTTP/1.1" 200 -
+2025-05-31 19:05:38,296 - 127.0.0.1 - - [31/May/2025 19:05:38] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 19:05:40,715 - 127.0.0.1 - - [31/May/2025 19:05:40] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:05:40,872 - 127.0.0.1 - - [31/May/2025 19:05:40] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:12:25,880 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:12:25,880 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:12:25,882 -  * Restarting with stat
+2025-05-31 19:12:26,713 -  * Debugger is active!
+2025-05-31 19:12:26,719 -  * Debugger PIN: 118-406-736
+2025-05-31 19:12:37,229 - 127.0.0.1 - - [31/May/2025 19:12:37] "GET /register HTTP/1.1" 200 -
+2025-05-31 19:12:54,764 - Tentativa register: user02@gmail.com - IP: 127.0.0.1
+2025-05-31 19:12:54,878 - Novo usuário registrado: user02@gmail.com com papel: user
+2025-05-31 19:12:54,878 - REGISTRO SUCESSO: user02@gmail.com - IP: 127.0.0.1 - Duração: 0.114s
+2025-05-31 19:12:54,879 - 127.0.0.1 - - [31/May/2025 19:12:54] "POST /register HTTP/1.1" 200 -
+2025-05-31 19:12:57,221 - 127.0.0.1 - - [31/May/2025 19:12:57] "GET /login HTTP/1.1" 200 -
+2025-05-31 19:13:08,264 - Tentativa login: user02@gmail.com - IP: 127.0.0.1
+2025-05-31 19:13:08,398 - Login bem-sucedido: user02@gmail.com
+2025-05-31 19:13:08,398 - LOGIN SUCESSO: user02@gmail.com - IP: 127.0.0.1 - Duração: 0.135s
+2025-05-31 19:13:08,399 - 127.0.0.1 - - [31/May/2025 19:13:08] "POST /login HTTP/1.1" 200 -
+2025-05-31 19:13:09,229 - 127.0.0.1 - - [31/May/2025 19:13:09] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:13:09,488 - 127.0.0.1 - - [31/May/2025 19:13:09] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:13:23,578 - 127.0.0.1 - - [31/May/2025 19:13:23] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-05-31 19:22:48,979 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:22:48,979 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:22:48,981 -  * Restarting with stat
+2025-05-31 19:22:49,982 -  * Debugger is active!
+2025-05-31 19:22:49,993 -  * Debugger PIN: 118-406-736
+2025-05-31 19:22:54,071 - 127.0.0.1 - - [31/May/2025 19:22:54] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:22:54,140 - 127.0.0.1 - - [31/May/2025 19:22:54] "[33mGET /user_info HTTP/1.1[0m" 404 -
+2025-05-31 19:22:54,312 - 127.0.0.1 - - [31/May/2025 19:22:54] "GET /login HTTP/1.1" 200 -
+2025-05-31 19:23:02,067 - Tentativa login: user02@gmail.com - IP: 127.0.0.1
+2025-05-31 19:23:02,220 - Login bem-sucedido: user02@gmail.com
+2025-05-31 19:23:02,221 - LOGIN SUCESSO: user02@gmail.com - IP: 127.0.0.1 - Duração: 0.154s
+2025-05-31 19:23:02,222 - 127.0.0.1 - - [31/May/2025 19:23:02] "POST /login HTTP/1.1" 200 -
+2025-05-31 19:23:03,057 - 127.0.0.1 - - [31/May/2025 19:23:03] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:23:03,095 - 127.0.0.1 - - [31/May/2025 19:23:03] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:23:24,831 - 127.0.0.1 - - [31/May/2025 19:23:24] "GET / HTTP/1.1" 200 -
+2025-05-31 19:31:40,715 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:31:40,715 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:31:40,721 -  * Restarting with stat
+2025-05-31 19:31:41,974 -  * Debugger is active!
+2025-05-31 19:31:41,981 -  * Debugger PIN: 118-406-736
+2025-05-31 19:32:01,512 - 127.0.0.1 - - [31/May/2025 19:32:01] "GET /register HTTP/1.1" 200 -
+2025-05-31 19:32:25,180 - 127.0.0.1 - - [31/May/2025 19:32:25] "GET / HTTP/1.1" 200 -
+2025-05-31 19:32:39,121 - 127.0.0.1 - - [31/May/2025 19:32:39] "GET /register HTTP/1.1" 200 -
+2025-05-31 19:33:00,784 - Tentativa register: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 19:33:00,914 - Novo usuário registrado: admin02@gmail.com com papel: admin
+2025-05-31 19:33:00,914 - REGISTRO SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.131s
+2025-05-31 19:33:00,915 - 127.0.0.1 - - [31/May/2025 19:33:00] "POST /register HTTP/1.1" 200 -
+2025-05-31 19:33:03,256 - 127.0.0.1 - - [31/May/2025 19:33:03] "GET /login HTTP/1.1" 200 -
+2025-05-31 19:33:06,483 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 19:33:06,484 - 127.0.0.1 - - [31/May/2025 19:33:06] "[31m[1mGET /register HTTP/1.1[0m" 429 -
+2025-05-31 19:33:16,944 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:33:16,944 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:33:16,946 -  * Restarting with stat
+2025-05-31 19:33:17,980 -  * Debugger is active!
+2025-05-31 19:33:17,990 -  * Debugger PIN: 118-406-736
+2025-05-31 19:33:18,062 - 127.0.0.1 - - [31/May/2025 19:33:18] "GET /register HTTP/1.1" 200 -
+2025-05-31 19:33:19,770 - 127.0.0.1 - - [31/May/2025 19:33:19] "GET /login HTTP/1.1" 200 -
+2025-05-31 19:33:26,851 - Tentativa login: admin01@gmail.com - IP: 127.0.0.1
+2025-05-31 19:33:26,865 - Tentativa de login falha: admin01@gmail.com
+2025-05-31 19:33:26,866 - LOGIN SUCESSO: admin01@gmail.com - IP: 127.0.0.1 - Duração: 0.015s
+2025-05-31 19:33:26,866 - 127.0.0.1 - - [31/May/2025 19:33:26] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 19:33:30,501 - Tentativa login: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 19:33:30,659 - Login bem-sucedido: admin02@gmail.com
+2025-05-31 19:33:30,659 - LOGIN SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.159s
+2025-05-31 19:33:30,663 - 127.0.0.1 - - [31/May/2025 19:33:30] "POST /login HTTP/1.1" 200 -
+2025-05-31 19:33:31,204 - 127.0.0.1 - - [31/May/2025 19:33:31] "GET /admin HTTP/1.1" 200 -
+2025-05-31 19:33:31,522 - 127.0.0.1 - - [31/May/2025 19:33:31] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 19:33:49,296 - 127.0.0.1 - - [31/May/2025 19:33:49] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:33:49,406 - 127.0.0.1 - - [31/May/2025 19:33:49] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:34:30,596 - 127.0.0.1 - - [31/May/2025 19:34:30] "GET /admin HTTP/1.1" 200 -
+2025-05-31 19:34:30,912 - 127.0.0.1 - - [31/May/2025 19:34:30] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 19:36:58,731 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 19:36:58,846 -  * Restarting with stat
+2025-05-31 19:36:59,974 -  * Debugger is active!
+2025-05-31 19:36:59,979 -  * Debugger PIN: 118-406-736
+2025-05-31 19:37:09,428 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 19:37:09,514 -  * Restarting with stat
+2025-05-31 19:37:10,704 -  * Debugger is active!
+2025-05-31 19:37:10,709 -  * Debugger PIN: 118-406-736
+2025-05-31 19:37:20,958 - 127.0.0.1 - - [31/May/2025 19:37:20] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:37:21,117 - 127.0.0.1 - - [31/May/2025 19:37:21] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:37:22,670 - 127.0.0.1 - - [31/May/2025 19:37:22] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:37:22,984 - 127.0.0.1 - - [31/May/2025 19:37:22] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:37:25,475 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 19:37:25,569 -  * Restarting with stat
+2025-05-31 19:37:26,587 -  * Debugger is active!
+2025-05-31 19:37:26,592 -  * Debugger PIN: 118-406-736
+2025-05-31 19:37:29,714 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:37:29,714 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:37:29,717 -  * Restarting with stat
+2025-05-31 19:37:30,594 -  * Debugger is active!
+2025-05-31 19:37:30,598 -  * Debugger PIN: 118-406-736
+2025-05-31 19:37:42,874 - 127.0.0.1 - - [31/May/2025 19:37:42] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:37:42,913 - 127.0.0.1 - - [31/May/2025 19:37:42] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:37:43,130 - 127.0.0.1 - - [31/May/2025 19:37:43] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:37:43,262 - 127.0.0.1 - - [31/May/2025 19:37:43] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:38:16,711 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:38:16,711 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:38:16,712 -  * Restarting with stat
+2025-05-31 19:38:17,577 -  * Debugger is active!
+2025-05-31 19:38:17,581 -  * Debugger PIN: 118-406-736
+2025-05-31 19:38:38,060 - 127.0.0.1 - - [31/May/2025 19:38:38] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:38:38,106 - 127.0.0.1 - - [31/May/2025 19:38:38] "[33mGET /user_info HTTP/1.1[0m" 404 -
+2025-05-31 19:38:38,325 - 127.0.0.1 - - [31/May/2025 19:38:38] "GET /login HTTP/1.1" 200 -
+2025-05-31 19:38:42,503 - 127.0.0.1 - - [31/May/2025 19:38:42] "GET /register HTTP/1.1" 200 -
+2025-05-31 19:38:52,783 - Tentativa register: teste@gmail.com - IP: 127.0.0.1
+2025-05-31 19:38:52,940 - ERRO na rota register: (zoneinfo._common.ZoneInfoNotFoundError) 'No time zone found with key America/Sao_Paulo'
+[SQL: INSERT INTO user (email, password, role, created_at, is_active, is_anonymized) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: [{'role': 'user', 'password': 'scrypt:32768:8:1$52AlmK7e23FqHjKb$9e857a5a70c364f7c0560d730154d635ddb5664b175eed6f156a7c45c09717317c984880596289061b1b4153e58eb36df0295b518176cc3b4fbc51a8546b5a03', 'email': 'teste@gmail.com'}]] - IP: 127.0.0.1
+2025-05-31 19:38:53,174 - 127.0.0.1 - - [31/May/2025 19:38:53] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-05-31 19:51:29,791 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:51:29,791 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:51:29,795 -  * Restarting with stat
+2025-05-31 19:51:31,928 -  * Debugger is active!
+2025-05-31 19:51:31,934 -  * Debugger PIN: 476-049-416
+2025-05-31 19:53:06,549 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:53:06,550 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:53:06,558 -  * Restarting with stat
+2025-05-31 19:53:08,520 -  * Debugger is active!
+2025-05-31 19:53:08,533 -  * Debugger PIN: 476-049-416
+2025-05-31 19:53:13,626 - Tentativa register: teste@gmail.com - IP: 127.0.0.1
+2025-05-31 19:53:13,930 - ERRO na rota register: (zoneinfo._common.ZoneInfoNotFoundError) 'No time zone found with key America/Sao_Paulo'
+[SQL: INSERT INTO user (email, password, role, created_at, is_active, is_anonymized) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: [{'role': 'user', 'email': 'teste@gmail.com', 'password': 'scrypt:32768:8:1$4glnJaAG16bfDVrY$6ae9dcafdbdbbbb78e95c61477f118e981dcf3ec6fba16409f2de11a6a02cafe653208a44d364553acd0bae238d13d825b96f883cb56113848f232dd199824b7'}]] - IP: 127.0.0.1
+2025-05-31 19:53:14,182 - 127.0.0.1 - - [31/May/2025 19:53:14] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-05-31 19:53:55,244 -  * Detected change in 'C:\\Users\\Goodeny\\Downloads\\Autenticacao-e-Administracao-de-Usuarios-master\\src\\run.py', reloading
+2025-05-31 19:53:55,575 -  * Restarting with stat
+2025-05-31 19:53:59,952 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:53:59,953 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:53:59,957 -  * Restarting with stat
+2025-05-31 19:54:01,961 -  * Debugger is active!
+2025-05-31 19:54:01,974 -  * Debugger PIN: 476-049-416
+2025-05-31 19:54:04,411 - Tentativa register: teste@gmail.com - IP: 127.0.0.1
+2025-05-31 19:54:04,742 - ERRO na rota register: (builtins.NameError) name 'BRASILIA_TZ' is not defined
+[SQL: INSERT INTO user (email, password, role, created_at, is_active, is_anonymized) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: [{'role': 'user', 'password': 'scrypt:32768:8:1$o3kHlPD0lmF0fwjY$3f266ccc95c7a25f6c61e58d1bd64afb3553769ba7366b25c29ce91180e4a84e012ceebeb4eef4a59b06d02bb6a98486660dc87ce42135a4757925fd569e35d2', 'email': 'teste@gmail.com'}]] - IP: 127.0.0.1
+2025-05-31 19:54:04,940 - 127.0.0.1 - - [31/May/2025 19:54:04] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-05-31 19:54:55,685 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 19:54:55,686 - [33mPress CTRL+C to quit[0m
+2025-05-31 19:54:55,689 -  * Restarting with stat
+2025-05-31 19:54:57,582 -  * Debugger is active!
+2025-05-31 19:54:57,599 -  * Debugger PIN: 476-049-416
+2025-05-31 19:54:59,044 - Tentativa register: teste@gmail.com - IP: 127.0.0.1
+2025-05-31 19:54:59,360 - Novo usuário registrado: teste@gmail.com com papel: user
+2025-05-31 19:54:59,360 - REGISTRO SUCESSO: teste@gmail.com - IP: 127.0.0.1 - Duração: 0.316s
+2025-05-31 19:54:59,363 - 127.0.0.1 - - [31/May/2025 19:54:59] "POST /register HTTP/1.1" 200 -
+2025-05-31 19:55:01,473 - 127.0.0.1 - - [31/May/2025 19:55:01] "GET /login HTTP/1.1" 200 -
+2025-05-31 19:55:10,275 - Tentativa login: user01@gmail.com - IP: 127.0.0.1
+2025-05-31 19:55:10,277 - Tentativa de login falha: user01@gmail.com
+2025-05-31 19:55:10,278 - LOGIN SUCESSO: user01@gmail.com - IP: 127.0.0.1 - Duração: 0.004s
+2025-05-31 19:55:10,278 - 127.0.0.1 - - [31/May/2025 19:55:10] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 19:55:21,042 - Tentativa login: teste@gmail.com - IP: 127.0.0.1
+2025-05-31 19:55:21,377 - Login bem-sucedido: teste@gmail.com
+2025-05-31 19:55:21,377 - LOGIN SUCESSO: teste@gmail.com - IP: 127.0.0.1 - Duração: 0.335s
+2025-05-31 19:55:21,378 - 127.0.0.1 - - [31/May/2025 19:55:21] "POST /login HTTP/1.1" 200 -
+2025-05-31 19:55:21,961 - 127.0.0.1 - - [31/May/2025 19:55:21] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 19:55:22,277 - 127.0.0.1 - - [31/May/2025 19:55:22] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 19:55:26,104 - 127.0.0.1 - - [31/May/2025 19:55:26] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-31 19:55:26,242 - 127.0.0.1 - - [31/May/2025 19:55:26] "GET / HTTP/1.1" 200 -
+2025-05-31 20:06:38,842 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 20:06:38,843 - [33mPress CTRL+C to quit[0m
+2025-05-31 20:06:38,846 -  * Restarting with stat
+2025-05-31 20:06:41,287 -  * Debugger is active!
+2025-05-31 20:06:41,300 -  * Debugger PIN: 476-049-416
+2025-05-31 20:06:41,423 - 127.0.0.1 - - [31/May/2025 20:06:41] "GET / HTTP/1.1" 200 -
+2025-05-31 20:06:56,065 - 127.0.0.1 - - [31/May/2025 20:06:56] "GET / HTTP/1.1" 200 -
+2025-05-31 20:07:28,508 - 127.0.0.1 - - [31/May/2025 20:07:28] "GET /login HTTP/1.1" 200 -
+2025-05-31 20:07:33,744 - 127.0.0.1 - - [31/May/2025 20:07:33] "GET /register HTTP/1.1" 200 -
+2025-05-31 20:07:49,272 - 127.0.0.1 - - [31/May/2025 20:07:49] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+2025-05-31 20:07:58,310 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 20:07:58,311 - 127.0.0.1 - - [31/May/2025 20:07:58] "[31m[1mPOST /register HTTP/1.1[0m" 429 -
+2025-05-31 20:08:10,044 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 20:08:10,045 - [33mPress CTRL+C to quit[0m
+2025-05-31 20:08:10,049 -  * Restarting with stat
+2025-05-31 20:08:12,508 -  * Debugger is active!
+2025-05-31 20:08:12,523 -  * Debugger PIN: 476-049-416
+2025-05-31 20:08:14,543 - 127.0.0.1 - - [31/May/2025 20:08:14] "GET /login HTTP/1.1" 200 -
+2025-05-31 20:16:25,193 - 127.0.0.1 - - [31/May/2025 20:16:25] "GET / HTTP/1.1" 200 -
+2025-05-31 20:16:34,871 - 127.0.0.1 - - [31/May/2025 20:16:34] "GET /register HTTP/1.1" 200 -
+2025-05-31 20:16:49,965 - 127.0.0.1 - - [31/May/2025 20:16:49] "[31m[1mPOST /register HTTP/1.1[0m" 400 -
+2025-05-31 20:17:10,943 - Tentativa register: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 20:17:11,221 - Novo usuário registrado: admin02@gmail.com com papel: admin
+2025-05-31 20:17:11,223 - REGISTRO SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.279s
+2025-05-31 20:17:11,224 - 127.0.0.1 - - [31/May/2025 20:17:11] "POST /register HTTP/1.1" 200 -
+2025-05-31 20:17:13,275 - 127.0.0.1 - - [31/May/2025 20:17:13] "GET /login HTTP/1.1" 200 -
+2025-05-31 20:17:16,079 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 20:17:16,081 - 127.0.0.1 - - [31/May/2025 20:17:16] "[31m[1mGET /register HTTP/1.1[0m" 429 -
+2025-05-31 20:17:32,791 - 127.0.0.1 - - [31/May/2025 20:17:32] "GET / HTTP/1.1" 200 -
+2025-05-31 20:17:34,536 - 127.0.0.1 - - [31/May/2025 20:17:34] "GET /login HTTP/1.1" 200 -
+2025-05-31 20:17:42,969 - Rate limit excedido para IP: 127.0.0.1 - Rota: login
+2025-05-31 20:17:42,970 - 127.0.0.1 - - [31/May/2025 20:17:42] "[31m[1mPOST /login HTTP/1.1[0m" 429 -
+2025-05-31 20:17:53,722 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 20:17:53,728 - [33mPress CTRL+C to quit[0m
+2025-05-31 20:17:53,754 -  * Restarting with stat
+2025-05-31 20:18:00,142 -  * Debugger is active!
+2025-05-31 20:18:00,172 -  * Debugger PIN: 476-049-416
+2025-05-31 20:18:00,455 - Tentativa login: admin01@gmail.com - IP: 127.0.0.1
+2025-05-31 20:18:00,487 - Tentativa de login falha: admin01@gmail.com
+2025-05-31 20:18:00,490 - LOGIN SUCESSO: admin01@gmail.com - IP: 127.0.0.1 - Duração: 0.035s
+2025-05-31 20:18:00,491 - 127.0.0.1 - - [31/May/2025 20:18:00] "[31m[1mPOST /login HTTP/1.1[0m" 401 -
+2025-05-31 20:18:05,076 - Tentativa login: admin02@gmail.com - IP: 127.0.0.1
+2025-05-31 20:18:05,370 - Login bem-sucedido: admin02@gmail.com
+2025-05-31 20:18:05,371 - LOGIN SUCESSO: admin02@gmail.com - IP: 127.0.0.1 - Duração: 0.295s
+2025-05-31 20:18:05,372 - 127.0.0.1 - - [31/May/2025 20:18:05] "POST /login HTTP/1.1" 200 -
+2025-05-31 20:18:06,265 - 127.0.0.1 - - [31/May/2025 20:18:06] "GET /admin HTTP/1.1" 200 -
+2025-05-31 20:18:06,326 - 127.0.0.1 - - [31/May/2025 20:18:06] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 20:18:24,030 - 127.0.0.1 - - [31/May/2025 20:18:24] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 20:18:24,334 - 127.0.0.1 - - [31/May/2025 20:18:24] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 20:18:48,670 - 127.0.0.1 - - [31/May/2025 20:18:48] "GET / HTTP/1.1" 200 -
+2025-05-31 20:18:59,216 - 127.0.0.1 - - [31/May/2025 20:18:59] "GET / HTTP/1.1" 200 -
+2025-05-31 20:19:00,981 - 127.0.0.1 - - [31/May/2025 20:19:00] "GET /login HTTP/1.1" 200 -
+2025-05-31 20:19:09,230 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 20:19:09,231 - 127.0.0.1 - - [31/May/2025 20:19:09] "[31m[1mGET /register HTTP/1.1[0m" 429 -
+2025-05-31 20:19:12,945 - Rate limit excedido para IP: 127.0.0.1 - Rota: register
+2025-05-31 20:19:12,946 - 127.0.0.1 - - [31/May/2025 20:19:12] "[31m[1mGET /register HTTP/1.1[0m" 429 -
+2025-05-31 20:19:21,950 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-05-31 20:19:21,951 - [33mPress CTRL+C to quit[0m
+2025-05-31 20:19:21,957 -  * Restarting with stat
+2025-05-31 20:19:25,283 -  * Debugger is active!
+2025-05-31 20:19:25,303 -  * Debugger PIN: 476-049-416
+2025-05-31 20:19:25,569 - 127.0.0.1 - - [31/May/2025 20:19:25] "GET /register HTTP/1.1" 200 -
+2025-05-31 20:19:43,498 - Tentativa register: user@gmail.com - IP: 127.0.0.1
+2025-05-31 20:19:43,896 - Novo usuário registrado: user@gmail.com com papel: user
+2025-05-31 20:19:43,897 - REGISTRO SUCESSO: user@gmail.com - IP: 127.0.0.1 - Duração: 0.399s
+2025-05-31 20:19:43,898 - 127.0.0.1 - - [31/May/2025 20:19:43] "POST /register HTTP/1.1" 200 -
+2025-05-31 20:19:46,316 - 127.0.0.1 - - [31/May/2025 20:19:46] "GET /login HTTP/1.1" 200 -
+2025-05-31 20:19:59,307 - Tentativa login: user@gmail.com - IP: 127.0.0.1
+2025-05-31 20:19:59,759 - Login bem-sucedido: user@gmail.com
+2025-05-31 20:19:59,759 - LOGIN SUCESSO: user@gmail.com - IP: 127.0.0.1 - Duração: 0.452s
+2025-05-31 20:19:59,770 - 127.0.0.1 - - [31/May/2025 20:19:59] "POST /login HTTP/1.1" 200 -
+2025-05-31 20:20:00,641 - 127.0.0.1 - - [31/May/2025 20:20:00] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 20:20:00,877 - 127.0.0.1 - - [31/May/2025 20:20:00] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 20:20:13,401 - 127.0.0.1 - - [31/May/2025 20:20:13] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 20:20:13,529 - 127.0.0.1 - - [31/May/2025 20:20:13] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 20:20:14,835 - 127.0.0.1 - - [31/May/2025 20:20:14] "GET /admin HTTP/1.1" 200 -
+2025-05-31 20:20:15,132 - 127.0.0.1 - - [31/May/2025 20:20:15] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 20:20:41,433 - Conta anonimizada: 3
+2025-05-31 20:20:41,436 - 127.0.0.1 - - [31/May/2025 20:20:41] "POST /delete_account HTTP/1.1" 200 -
+2025-05-31 20:20:41,789 - 127.0.0.1 - - [31/May/2025 20:20:41] "GET / HTTP/1.1" 200 -
+2025-05-31 20:20:46,783 - 127.0.0.1 - - [31/May/2025 20:20:46] "GET /admin HTTP/1.1" 200 -
+2025-05-31 20:20:46,883 - 127.0.0.1 - - [31/May/2025 20:20:46] "GET /api/users HTTP/1.1" 200 -
+2025-05-31 20:21:41,951 - 127.0.0.1 - - [31/May/2025 20:21:41] "GET /dashboard HTTP/1.1" 200 -
+2025-05-31 20:21:42,246 - 127.0.0.1 - - [31/May/2025 20:21:42] "GET /user_info HTTP/1.1" 200 -
+2025-05-31 20:22:01,787 - 127.0.0.1 - - [31/May/2025 20:22:01] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-05-31 20:22:02,012 - 127.0.0.1 - - [31/May/2025 20:22:02] "GET / HTTP/1.1" 200 -

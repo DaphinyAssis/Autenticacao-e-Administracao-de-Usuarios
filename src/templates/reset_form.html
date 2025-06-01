@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Senha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 3rem;
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+        .alert {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2 class="mb-4 text-center">Nova Senha</h2>
+            
+            <div class="alert alert-success" role="alert" id="success-alert">
+                Senha redefinida com sucesso! Redirecionando para o login...
+            </div>
+            
+            <div class="alert alert-danger" role="alert" id="error-alert">
+                Erro ao redefinir senha.
+            </div>
+            
+            <p class="mb-4">Por favor, informe sua nova senha para a conta <strong id="email-display">{{ email }}</strong>.</p>
+            
+            <form id="new-password-form" novalidate>
+                <input type="hidden" id="token" name="token" value="{{ token }}">
+                
+                <div class="mb-3">
+                    <label for="password" class="form-label">Nova Senha</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                    <div class="invalid-feedback">
+                        A senha é obrigatória.
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="confirm-password" class="form-label">Confirme a Nova Senha</label>
+                    <input type="password" class="form-control" id="confirm-password" required>
+                    <div class="invalid-feedback">
+                        As senhas não conferem.
+                    </div>
+                </div>
+                
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary">Salvar Nova Senha</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('new-password-form');
+            const successAlert = document.getElementById('success-alert');
+            const errorAlert = document.getElementById('error-alert');
+            
+            // Display email from template
+            const emailDisplay = document.getElementById('email-display');
+            if (emailDisplay) {
+                emailDisplay.textContent = "{{ email }}";
+            }
+            
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Hide alerts
+                successAlert.style.display = 'none';
+                errorAlert.style.display = 'none';
+                
+                // Basic form validation
+                form.classList.add('was-validated');
+                
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirm-password').value;
+                
+                if (password !== confirmPassword) {
+                    document.getElementById('confirm-password').setCustomValidity('As senhas não conferem');
+                } else {
+                    document.getElementById('confirm-password').setCustomValidity('');
+                }
+                
+                if (!form.checkValidity()) {
+                    return;
+                }
+                
+                // Form data
+                const formData = new FormData(form);
+                
+                try {
+                    const response = await fetch(window.location.href, {
+                        method: 'POST',
+                        body: formData
+                    });
+                    
+                    const data = await response.json();
+                    
+                    if (response.ok) {
+                        successAlert.style.display = 'block';
+                        form.reset();
+                        form.classList.remove('was-validated');
+                        setTimeout(() => {
+                            window.location.href = '/login';
+                        }, 2000);
+                    } else {
+                        errorAlert.textContent = data.error || 'Erro ao redefinir senha.';
+                        errorAlert.style.display = 'block';
+                    }
+                } catch (error) {
+                    console.error('Erro:', error);
+                    errorAlert.textContent = 'Erro ao conectar com o servidor.';
+                    errorAlert.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
